@@ -1,2 +1,6 @@
 import "./style.scss";
-console.log("Hello from Vite + WordPress!");
+import { initHeader } from "./js/header.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  initHeader();
+});

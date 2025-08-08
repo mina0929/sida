@@ -1,0 +1,74 @@
+@use "@scss/foundation/all" as *;
+/* ==========================================================================
+   Component - Button
+   ========================================================================== */
+
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+  border: none;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 20px;
+}
+
+.c-btn--primary {
+  background-color: $color-key;
+  color: #fff;
+}
+
+.c-btn--primary:hover {
+  background-color: $color-pink;
+  transform: scale(1.05);
+}
+
+.c-btn--primary::after {
+  content: "→";
+  font-size: 20px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: $bp-md) {
+  .c-btn {
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
+  }
+
+  .c-btn--primary::after {
+    font-size: 18px;
+  }
+}
+
+.c-link {
+  color: $color-key;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.c-link:hover {
+  color: $color-base;
+}
+
+.c-link::after {
+  content: "→";
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.c-link:hover::after {
+  transform: translateX(4px);
+}

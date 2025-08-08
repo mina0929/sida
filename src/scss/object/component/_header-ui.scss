@@ -1,0 +1,102 @@
+@use "@scss/foundation/all" as *;
+
+.c-site-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+/* c-tagline */
+.c-tagline {
+  font-size: 12px;
+  margin: 0;
+  white-space: nowrap;
+}
+@media (max-width: $bp-md) {
+  .c-tagline {
+    display: none;
+  }
+}
+
+/* c-nav */
+.c-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  list-style: none;
+  justify-content: flex-end;
+}
+.c-nav__item {
+  margin: 0;
+}
+.c-nav__link {
+  color: $color-base;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+.c-nav__link:hover {
+  color: $color-key;
+}
+
+/* c-hamburger */
+.c-hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $color-base;
+  transition: color 0.3s ease;
+}
+.c-hamburger:hover {
+  color: #666;
+}
+
+/* c-close-btn */
+.c-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.c-close-btn:hover {
+  color: #666;
+}
+
+/* c-global-nav */
+.c-global-nav {
+  list-style: none;
+  margin: 80px 0 0;
+  padding: 0;
+}
+.c-global-nav__item {
+  margin: 0 0 20px;
+}
+.c-global-nav__link {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+  transition: color 0.3s ease;
+}
+.c-global-nav__link:hover {
+  color: #666;
+}

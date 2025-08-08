@@ -1,0 +1,172 @@
+@use "@scss/foundation/all" as *;
+
+/* ==========================================================================
+   Layout - Footer
+   ========================================================================== */
+
+/* l-footer
+   ========================================================================== */
+.l-footer {
+  padding: 80px 0 40px;
+}
+
+.l-footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.l-footer__contact {
+  margin-bottom: 60px;
+}
+
+.l-footer__nav {
+  margin-bottom: 80px;
+}
+
+.l-footer__brand {
+  margin-bottom: 100px;
+}
+
+.l-footer__copyright {
+}
+
+/* ==========================================================================
+   Component - Footer
+   ========================================================================== */
+
+/* c-footer-title
+   ========================================================================== */
+.c-footer-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #5a9a8b;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+/* c-footer-nav
+   ========================================================================== */
+.c-footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.c-footer-nav__item {
+  margin: 0;
+}
+
+.c-footer-nav__link {
+  color: $color-base;
+  text-decoration: none;
+  font-size: 19px;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+  padding: 10px 15px;
+}
+
+/* CONTACTボタンのホバー効果 */
+.c-footer-nav__link--contact {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 560px;
+  background: #fff;
+  color: #5a9a8b;
+  transition: all 0.3s ease;
+}
+
+.c-footer-nav__link--contact:hover {
+  background-color: #5a9a8b;
+  color: #fff;
+}
+
+/* c-footer-logo
+   ========================================================================== */
+.c-footer-logo {
+  width: fit-content;
+  margin: 0 auto 20px;
+}
+
+/* c-footer-tagline
+   ========================================================================== */
+.c-footer-tagline {
+  margin: 0 0 8px 0;
+}
+
+.c-footer-tagline--jp {
+  font-size: 14px;
+}
+
+/* c-copyright
+   ========================================================================== */
+.c-copyright {
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: $bp-md) {
+  .l-footer {
+    padding: 60px 0 30px;
+  }
+
+  .l-footer__contact {
+    margin-bottom: 40px;
+  }
+
+  .l-footer__nav {
+    margin-bottom: 60px;
+  }
+
+  .l-footer__brand {
+    margin-bottom: 40px;
+  }
+
+  .c-footer-title {
+    font-size: 20px;
+  }
+
+  .c-footer-nav {
+    gap: 20px;
+  }
+
+  .c-footer-nav__link {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .c-footer-logo {
+    font-size: 36px;
+  }
+
+  .c-footer-tagline {
+    font-size: 14px;
+  }
+
+  .c-footer-tagline--jp {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .c-footer-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .c-footer-nav__link {
+    display: block;
+    width: 200px;
+    text-align: center;
+  }
+}

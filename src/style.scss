@@ -2,6 +2,7 @@
 @use "scss/foundation/reset";
 @use "scss/foundation/variables";
 @use "scss/foundation/mixin";
+@use "scss/foundation/base";
 
 // Layout
 @use "scss/layout/header";
@@ -11,8 +12,11 @@
 @use "scss/object/component/button";
 
 // Object - Project
+@use "scss/object/component/header-ui";
 @use "scss/object/project/article";
+@use "scss/object/project/index";
 
 // Object - Utility
+@use "scss/object/utility/utilities";
 @use "scss/object/utility/align";
 @use "scss/object/utility/margin";

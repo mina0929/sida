@@ -1,0 +1,26 @@
+@use "@scss/foundation/all" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-base;
+  font-size: $font-size-base;
+  color: $color-base;
+  line-height: 1.6;
+  background-color: $color-bg;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: $color-key;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
