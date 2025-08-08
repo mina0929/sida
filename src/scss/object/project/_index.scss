@@ -189,7 +189,7 @@
 
 .p-salons {
   padding: 100px 0;
-  background-color: #f0f4f3;
+  background-color: #788280;
 }
 
 .p-salons__inner {
@@ -227,10 +227,8 @@
 }
 
 .p-salons__item {
-  background-color: #fff;
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .p-salons__img {
@@ -261,9 +259,7 @@
 
 .p-recruit {
   padding: 100px 0;
-  background: linear-gradient(135deg, rgba(90, 154, 139, 0.1) 0%, rgba(214, 121, 150, 0.1) 100%);
 }
-
 .p-recruit__inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -271,12 +267,23 @@
 }
 
 .p-recruit__content {
-  background: url("/wp-content/themes/sida/assets/index/images/p-recruit__bg.jpg") no-repeat center/cover;
+  position: relative;
+  background: url("/wp-content/themes/sida/assets/images/index/p-recruit__bg.jpg") no-repeat center/cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   border-radius: 20px;
   padding: 70px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to right, #0c2722 0%, rgba(12, 39, 34, 0) 100%), url("@/assets/images/p-recruit__bg.jpg") center/cover no-repeat;
+    opacity: 0.33;
+  }
 }
 
 .p-recruit__content * {
@@ -298,13 +305,17 @@
   font-size: 14px;
   line-height: 1.8;
 }
-
+.p-recruit__text {
+  position: relative;
+  z-index: 2;
+}
 .p-recruit__cta {
   display: flex;
   height: 100%;
   width: 100%;
   align-items: flex-end;
   justify-content: flex-end;
+  z-index: 2;
 }
 /* ==========================================================================
    Project - Contact
