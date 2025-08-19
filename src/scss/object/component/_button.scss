@@ -1,4 +1,5 @@
-@use "@scss/foundation/all" as *;
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
 /* ==========================================================================
    Component - Button
    ========================================================================== */
@@ -52,23 +53,100 @@
 .c-link {
   color: $color-key;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 17px;
   letter-spacing: 0.05em;
   position: relative;
   transition: color 0.3s ease;
-}
-
-.c-link:hover {
+  padding-bottom: 20px;
   color: $color-base;
+  padding-right: 50px;
+  display: block;
+  width: fit-content;
 }
-
+.c-link::before,
 .c-link::after {
-  content: "→";
-  margin-left: 8px;
-  transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transition: all 0.3s ease;
+}
+.c-link::before {
+  background-color: $color-base;
+  opacity: 0.2;
+}
+.c-link::after {
+  width: 0;
+  background-color: $color-pink;
 }
 
 .c-link:hover::after {
-  transform: translateX(4px);
+  width: 100%;
+}
+
+.c-link__arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 20px;
+  margin: auto;
+  width: 14px;
+  transition: 0.3s;
+}
+.c-link:hover {
+  .c-link__arrow {
+    right: 10px;
+  }
+}
+.c-floating {
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  z-index: 1000;
+  background-color: $color-key;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  border-radius: 100px 0 0 100px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  gap: 10px;
+  &:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: $color-pink;
+    transition: all 0.3s ease;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    width: 15px;
+    height: 15px;
+    transition: all 0.3s ease;
+    background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
+  }
+
+  &:hover {
+    background-color: $color-pink;
+    &:before {
+      background-color: $color-key;
+    }
+    &:after {
+      right: 30px;
+    }
+  }
 }

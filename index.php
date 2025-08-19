@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="p-hero" id="hero">
-    <div class="p-hero__inner">
-        <div class="p-hero__content">
+    <div class="p-hero__grid">
+        <div class="p-hero__inner">
             <div class="p-hero__text">
                 <h1 class="p-hero__title">
                     <span class="p-hero__title-line">Your Beauty.</span>
@@ -13,12 +13,10 @@
                     美しさを叶えるライフサロン。
                 </p>
             </div>
-            <div class="p-hero__cta">
-                <a href="#recruit" class="c-btn c-btn--primary">RECRUIT</a>
-            </div>
         </div>
         <div class="p-hero__image">
-            <img src="/placeholder.svg?height=600&width=800" alt="Beautiful woman with brown hair" class="p-hero__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/hero.jpg"
+                alt="Beautiful woman with brown hair" class="p-hero__img">
         </div>
     </div>
 </section>
@@ -29,98 +27,92 @@
             <div class="p-concept__text">
                 <h2 class="p-concept__title">
                     <span class="p-concept__title-en">CONCEPT</span>
+                    <span class="p-concept__title-ja">
+                        マンツーマン施術で、
+                        <br>
+                        髪に“わたしらしさ”を。
+                    </span>
                 </h2>
-                <h3 class="p-concept__subtitle">
-                    マンツーマン施術で、<br>
-                    髪にこだわりしさを。
-                </h3>
                 <div class="p-concept__description">
-                    <p class="p-concept__text-item">
-                        <strong>WHAT'S</strong> - あなたらしさを引き出す技術
-                    </p>
-                    <p>
-                        あなたらしさを引き出すため、マンツーマンでお客様と向き合います。<br>
-                        髪質やライフスタイルに合わせたスタイリングをご提案いたします。
-                    </p>
-                    <p>
-                        1対1のプライベート空間で安心してお過ごしいただけます。
-                    </p>
-                    <p>
-                        お客様の「なりたい」を叶えるため、丁寧なカウンセリングから始まり、<br>
-                        今後のお手入れ方法まで丁寧にお伝えいたします。
-                    </p>
-                    <p>
-                        ずっと美しく輝き続けるあなたでいてください。
-                    </p>
-                    <p class="p-concept__text-item">
-                        髪型でライフスタイルが変わる。
-                    </p>
-                    <p>
-                        自分らしさに出会う場所で新しい自分を見つけてください。
-                    </p>
-                    <p>
-                        あなたにとって、髪型は人生を豊かにするパートナーでありたい。
+                    <p>sidaでは、カウンセリングから仕上げまでを<br>
+                        一人のスタイリストが担当する“マンツーマン施術”を大切にしています。<br>
+                        私たちのカウンセリングは、単に髪型を決めるのではなく、<br>
+                        「印象プロデュース」という考え方を軸にしています。<br>
+                        お客様が「どう見られたいか」という理想のイメージに寄り添いながら、<br>
+                        今の印象とのズレを丁寧に整えていくことで、<br>
+                        その方らしさが自然とにじみ出るスタイルをかたちにしていきます。<br>
+                        <br>
+                        髪質やライフスタイルに寄り添い、<br>
+                        流れ作業のない丁寧な時間の中で生まれる特別な体験。<br>
+                        あなたの毎日に、自信と心地よさをプラスするヘアデザインをsidaで。
                     </p>
                 </div>
             </div>
-            <div class="p-concept__images">
-                <div class="p-concept__image p-concept__image--1">
-                    <img src="/placeholder.svg?height=400&width=300" alt="Beautiful hairstyle" class="p-concept__img">
-                </div>
-                <div class="p-concept__image p-concept__image--2">
-                    <img src="/placeholder.svg?height=300&width=400" alt="Salon interior" class="p-concept__img">
-                </div>
-            </div>
+        </div>
+    </div>
+    <div class="p-concept__images">
+        <div class="p-concept__image p-concept__image--1">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/concept1.jpg"
+                alt="Beautiful hairstyle" class="p-concept__img">
+        </div>
+        <div class="p-concept__image p-concept__image--2">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/concept2.jpg" alt="Salon interior"
+                class="p-concept__img">
         </div>
     </div>
 </section>
 
 <section class="p-company" id="company">
     <div class="p-company__inner">
-        <div class="p-company__header">
-            <h2 class="p-company__title">
-                <span class="p-company__title-en">COMPANY</span>
-            </h2>
-            <div class="p-company__description">
-                <p>
-                    <strong>MESSAGE</strong> 「髪」を通じて「生き方」を変える美容室です。
-                </p>
-                <p>
-                    お客様に寄り添うため、完全予約制でお客様だけのために、時間をかけて丁寧に<br>
-                    カウンセリングからスタイリングまで、プロフェッショナルな技術でお応えします。
-                </p>
-                <p>
-                    私たちは、お客様の人生に寄り添う「髪」のパートナーとして、いつまでも美しく<br>
-                    輝き続けるお手伝いをさせていただきます。マンツーマンでお客様と向き合い、<br>
-                    ライフスタイルに合わせたヘアスタイルをご提案いたします。
-                </p>
+        <div class="p-company__content">
+            <div class="p-company__left">
+                <h2 class="p-company__title">
+                    <span class="p-company__title-en">COMPANY</span>
+                    <span class="p-company__title-ja">sidaについて</span>
+                </h2>
+                <div class="p-company__link">
+                    <a href="#" class="c-link">View more<img
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/common/arrow.svg"
+                            class="c-link__arrow"></a>
+                </div>
             </div>
-            <div class="p-company__link">
-                <a href="#" class="c-link">View more</a>
+            <div class="p-company__right">
+                <div class="p-company__description">
+                    <p>sidaは、「思いやり」と「安心」を大切にする美容サロン運営会社です。<br>
+                        美容師として働く人たちが、将来に不安を感じることなく、自分らしく輝ける場所をつくりたい――<br>
+                        そんな想いからスタートしました。カウンセリング・ケア・カラーを軸とした、マンツーマン施術を大切にし、お客様一人ひとりに寄り添う丁寧なサロン体験を提供しています。また、スタッフにとっても安心して長く働ける環境を整え、ライフスタイルに合わせた働き方やキャリアアップの機会を広げています。
+                    </p>
+                </div>
             </div>
         </div>
         <div class="p-company__images">
-            <div class="p-company__image">
-                <img src="/placeholder.svg?height=300&width=250" alt="Hair stylist at work" class="p-company__img">
-                <p class="p-company__image-caption">
-                    <strong>技術力</strong><br>
-                    確かな技術力
-                </p>
-            </div>
-            <div class="p-company__image">
-                <img src="/placeholder.svg?height=300&width=250" alt="Hair consultation" class="p-company__img">
-                <p class="p-company__image-caption">
-                    <strong>カウンセリング</strong><br>
-                    丁寧なカウンセリング
-                </p>
-            </div>
-            <div class="p-company__image">
-                <img src="/placeholder.svg?height=300&width=250" alt="Salon interior" class="p-company__img">
-                <p class="p-company__image-caption">
-                    <strong>空間</strong><br>
-                    心地よい空間
-                </p>
-            </div>
+            <a href="" class="p-company__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company1.jpg"
+                    alt="Hair stylist at work" class="p-company__img">
+                <div class="p-company__image-num">01</div>
+                <div class="p-company__image-caption">
+                    <p class="p-company__caption--en">MVV</p>
+                    <p class="p-company__caption--ja">sidaの使命</p>
+                </div>
+            </a>
+            <a href="" class="p-company__image"> <img
+                    src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company2.jpg"
+                    alt="Hair consultation" class="p-company__img">
+                <div class="p-company__image-num">01</div>
+                <div class="p-company__image-caption">
+                    <p class="p-company__caption--en">GREETING</p>
+                    <p class="p-company__caption--ja">ごあいさつ</p>
+                </div>
+            </a>
+            <a href="" class="p-company__image"> <img
+                    src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
+                    alt="Salon interior" class="p-company__img">
+                <div class="p-company__image-num">01</div>
+                <div class="p-company__image-caption">
+                    <p class="p-company__caption--en">OVERVIEW</p>
+                    <p class="p-company__caption--ja">会社概要</p>
+                </div>
+            </a>
         </div>
     </div>
 </section>
@@ -130,56 +122,62 @@
         <div class="p-salons__header">
             <h2 class="p-salons__title">
                 <span class="p-salons__title-en">OUR SALONS</span>
-                <span class="p-salons__title-ja">店舗情報</span>
+                <span class="p-salons__title-ja">サロン紹介</span>
             </h2>
             <div class="p-salons__link">
-                <a href="#" class="c-link">View more</a>
+                <a href="#" class="c-link">View more<img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/common/arrow.svg"
+                        class="c-link__arrow"></a>
             </div>
         </div>
         <div class="p-salons__grid">
-            <div class="p-salons__item">
+            <a href="" class="p-salons__item">
                 <div class="p-salons__image">
-                    <img src="/placeholder.svg?height=250&width=300" alt="sida salon" class="p-salons__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
+                        alt="sida salon" class="p-salons__img">
                 </div>
                 <div class="p-salons__content">
                     <h3 class="p-salons__name">sida</h3>
-                    <p class="p-salons__address">東京都渋谷区</p>
+                    <p class="p-salons__address">大阪府茨木市</p>
                 </div>
-            </div>
-            <div class="p-salons__item">
+            </a>
+            <a href="" class="p-salons__item">
                 <div class="p-salons__image">
-                    <img src="/placeholder.svg?height=250&width=300" alt="sida SAIN salon" class="p-salons__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
+                        alt="sida SAIN salon" class="p-salons__img">
                 </div>
                 <div class="p-salons__content">
-                    <h3 class="p-salons__name">sida SAIN</h3>
-                    <p class="p-salons__address">東京都新宿区西新宿</p>
+                    <h3 class="p-salons__name">sida SAIIN</h3>
+                    <p class="p-salons__address">京都府京都市右京区</p>
                 </div>
-            </div>
-            <div class="p-salons__item">
+            </a>
+            <a href="" class="p-salons__item">
                 <div class="p-salons__image">
-                    <img src="/placeholder.svg?height=250&width=300" alt="sida MINORI salon" class="p-salons__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
+                        alt="sida MINORI salon" class="p-salons__img">
                 </div>
                 <div class="p-salons__content">
-                    <h3 class="p-salons__name">sida MINORI</h3>
-                    <p class="p-salons__address">東京都港区表参道</p>
+                    <h3 class="p-salons__name">sida MINOH</h3>
+                    <p class="p-salons__address">大阪府箕面市</p>
                 </div>
-            </div>
-            <div class="p-salons__item">
+            </a>
+            <a href="" class="p-salons__item">
                 <div class="p-salons__image">
-                    <img src="/placeholder.svg?height=250&width=300" alt="room by sida" class="p-salons__img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
+                        alt="room by sida" class="p-salons__img">
                 </div>
                 <div class="p-salons__content">
-                    <h3 class="p-salons__name">room by sida</h3>
-                    <p class="p-salons__address">東京都港区六本木</p>
+                    <h3 class="p-salons__name">ranan by sida</h3>
+                    <p class="p-salons__address">京都府京都市河原町</p>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>
 
 <section class="p-recruit" id="recruit">
     <div class="p-recruit__inner">
-        <div class="p-recruit__content">
+        <a href class="p-recruit__content">
             <div class="p-recruit__text">
                 <h2 class="p-recruit__title">
                     <span class="p-recruit__title-en">RECRUIT</span>
@@ -194,9 +192,9 @@
                 </div>
             </div>
             <div class="p-recruit__cta">
-                <a href="#contact" class="c-btn c-btn--primary">MORE</a>
+                <div class="c-btn c-btn--primary">MORE</div>
             </div>
-        </div>
+        </a>
     </div>
 </section>
 

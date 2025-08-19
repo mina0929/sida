@@ -1,4 +1,6 @@
 </main>
+
+<a href="#recruit" class="c-floating">RECRUIT</a>
 <footer class="l-footer">
     <div class="l-footer__inner">
         <div class="l-footer__contact">

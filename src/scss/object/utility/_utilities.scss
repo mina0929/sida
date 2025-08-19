@@ -1,4 +1,5 @@
-@use "@scss/foundation/all" as *;
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
 
 /* u-hidden */
 .u-hidden {
