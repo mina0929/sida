@@ -63,14 +63,14 @@
 </section>
 
 <section class="p-company" id="company">
-    <div class="p-company__inner">
+    <div class="l-container">
         <div class="p-company__content">
             <div class="p-company__left">
                 <h2 class="p-company__title">
                     <span class="p-company__title-en">COMPANY</span>
                     <span class="p-company__title-ja">sidaについて</span>
                 </h2>
-                <div class="p-company__link">
+                <div class="p-company__link md-hidden">
                     <a href="#" class="c-link">View more<img
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/common/arrow.svg"
                             class="c-link__arrow"></a>
@@ -83,6 +83,11 @@
                         そんな想いからスタートしました。カウンセリング・ケア・カラーを軸とした、マンツーマン施術を大切にし、お客様一人ひとりに寄り添う丁寧なサロン体験を提供しています。また、スタッフにとっても安心して長く働ける環境を整え、ライフスタイルに合わせた働き方やキャリアアップの機会を広げています。
                     </p>
                 </div>
+            </div>
+            <div class="p-company__link md-only">
+                <a href="#" class="c-link">View more<img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/common/arrow.svg"
+                        class="c-link__arrow"></a>
             </div>
         </div>
         <div class="p-company__images">
@@ -118,59 +123,67 @@
 </section>
 
 <section class="p-salons" id="salon">
-    <div class="p-salons__inner">
+    <div class="l-container">
         <div class="p-salons__header">
             <h2 class="p-salons__title">
                 <span class="p-salons__title-en">OUR SALONS</span>
                 <span class="p-salons__title-ja">サロン紹介</span>
             </h2>
-            <div class="p-salons__link">
+            <div class="p-salons__link md-hidden">
                 <a href="#" class="c-link">View more<img
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/common/arrow.svg"
                         class="c-link__arrow"></a>
             </div>
         </div>
-        <div class="p-salons__grid">
-            <a href="" class="p-salons__item">
-                <div class="p-salons__image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
-                        alt="sida salon" class="p-salons__img">
-                </div>
-                <div class="p-salons__content">
-                    <h3 class="p-salons__name">sida</h3>
-                    <p class="p-salons__address">大阪府茨木市</p>
-                </div>
-            </a>
-            <a href="" class="p-salons__item">
-                <div class="p-salons__image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
-                        alt="sida SAIN salon" class="p-salons__img">
-                </div>
-                <div class="p-salons__content">
-                    <h3 class="p-salons__name">sida SAIIN</h3>
-                    <p class="p-salons__address">京都府京都市右京区</p>
-                </div>
-            </a>
-            <a href="" class="p-salons__item">
-                <div class="p-salons__image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
-                        alt="sida MINORI salon" class="p-salons__img">
-                </div>
-                <div class="p-salons__content">
-                    <h3 class="p-salons__name">sida MINOH</h3>
-                    <p class="p-salons__address">大阪府箕面市</p>
-                </div>
-            </a>
-            <a href="" class="p-salons__item">
-                <div class="p-salons__image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
-                        alt="room by sida" class="p-salons__img">
-                </div>
-                <div class="p-salons__content">
-                    <h3 class="p-salons__name">ranan by sida</h3>
-                    <p class="p-salons__address">京都府京都市河原町</p>
-                </div>
-            </a>
+        <div class="p-salons__grid swiper">
+            <div class="swiper-wrapper">
+                <a href="" class="p-salons__item swiper-slide">
+                    <div class="p-salons__image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
+                            alt="sida salon" class="p-salons__img">
+                    </div>
+                    <div class="p-salons__content">
+                        <h3 class="p-salons__name">sida</h3>
+                        <p class="p-salons__address">大阪府茨木市</p>
+                    </div>
+                </a>
+                <a href="" class="p-salons__item swiper-slide">
+                    <div class="p-salons__image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
+                            alt="sida SAIN salon" class="p-salons__img">
+                    </div>
+                    <div class="p-salons__content">
+                        <h3 class="p-salons__name">sida SAIIN</h3>
+                        <p class="p-salons__address">京都府京都市右京区</p>
+                    </div>
+                </a>
+                <a href="" class="p-salons__item swiper-slide">
+                    <div class="p-salons__image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
+                            alt="sida MINORI salon" class="p-salons__img">
+                    </div>
+                    <div class="p-salons__content">
+                        <h3 class="p-salons__name">sida MINOH</h3>
+                        <p class="p-salons__address">大阪府箕面市</p>
+                    </div>
+                </a>
+                <a href="" class="p-salons__item swiper-slide">
+                    <div class="p-salons__image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
+                            alt="room by sida" class="p-salons__img">
+                    </div>
+                    <div class="p-salons__content">
+                        <h3 class="p-salons__name">ranan by sida</h3>
+                        <p class="p-salons__address">京都府京都市河原町</p>
+                    </div>
+                </a>
+            </div>
+            <div class="p-salons__pagination"></div>
+        </div>
+        <div class="p-salons__link md-only">
+            <a href="#" class="c-link">View more<img
+                    src="<?php echo get_template_directory_uri(); ?>/assets/images/common/arrow.svg"
+                    class="c-link__arrow"></a>
         </div>
     </div>
 </section>
@@ -184,9 +197,9 @@
                 </h2>
                 <h3 class="p-recruit__subtitle">
                     この先も、<br>
-                    美容師として歩んでいける場所。
+                    美容師として<br class="md-only">歩んでいける場所。
                 </h3>
-                <div class="p-recruit__description">
+                <div class="p-recruit__description md-hidden">
                     <p>sidaは、スタッフ一人ひとりの人生に、そっと寄り添えるサロンでありたいと思っています。安心できる給与やお休みの制度、無理のない働き方、頼れる仲間たち。そして、頑張りたいときには背中を押してくれるキャリアの仕組みも整えています。ここでなら、美容師としての毎日が、もっと誇らしく、もっとあたたかくなる。そんな場所を、一緒につくっていきませんか。
                     </p>
                 </div>

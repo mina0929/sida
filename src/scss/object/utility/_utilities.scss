@@ -5,6 +5,16 @@
 .u-hidden {
   display: none !important;
 }
+.md-only {
+  @media (min-width: $bp-md) {
+    display: none !important;
+  }
+}
+.md-hidden {
+  @media (max-width: $bp-md) {
+    display: none !important;
+  }
+}
 
 /* u-sr-only */
 .u-sr-only {
@@ -17,9 +27,4 @@
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
-}
-
-/* スクロールロック */
-body.is-menu-open {
-  overflow: hidden;
 }

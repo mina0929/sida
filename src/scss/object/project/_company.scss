@@ -1,0 +1,121 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-company_mvv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 50px;
+  @media (max-width: $bp-md) {
+    gap: 20px;
+  }
+}
+.p-company_mvv-item {
+  background-color: #fff;
+  padding: 50px;
+  @media (max-width: $bp-md) {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  &--1,
+  &--2 {
+    text-align: center;
+    @media (min-width: $bp-md) {
+      width: calc(50% - 25px);
+    }
+  }
+  &--3 {
+    @media (min-width: $bp-md) {
+      width: 70%;
+    }
+  }
+}
+
+.p-company_mvv-title {
+  color: rgba($color-base, 0.5);
+  font-size: 19px;
+}
+
+.p-company_mvv-subtitle {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.p-company_mvv-desc {
+  font-size: 14px;
+  line-height: 2;
+  @media (max-width: $bp-md) {
+    line-height: 2;
+  }
+}
+
+.p-company_mvv-list {
+  list-style: none;
+  margin: 0;
+  counter-reset: mvv;
+  margin-top: 30px;
+}
+
+.p-company_mvv-list li {
+  counter-increment: mvv;
+  position: relative;
+  padding-left: 30px;
+  font-size: 19px;
+  @media (max-width: $bp-md) {
+    font-size: 16px;
+  }
+  + li {
+    margin-top: 10px;
+  }
+}
+
+.p-company_mvv-list li::before {
+  content: counter(mvv, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: rgba($color-base, 0.5);
+  font-size: 13px;
+}
+
+.p-company_mvv__image {
+  margin: 100px 0 0;
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+}
+
+.p-company_greeting {
+  padding: 150px 0;
+  background: #fff;
+  @media (max-width: $bp-md) {
+    padding: 100px 0;
+  }
+}
+
+.p-company_greeting__box {
+  display: grid;
+  gap: 50px;
+  align-items: center;
+  @media (min-width: $bp-md) {
+    gap: 100px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.p-company_greeting__title--ja {
+  font-size: 35px;
+  line-height: 1.5;
+  margin: 30px 0;
+  @media (max-width: $bp-md) {
+    font-size: 25px;
+  }
+}
+
+.p-company_greeting__desc {
+  font-size: 15px;
+  line-height: 2;
+  @media (max-width: $bp-md) {
+    line-height: 2;
+  }
+}

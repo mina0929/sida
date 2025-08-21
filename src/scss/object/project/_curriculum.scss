@@ -1,0 +1,185 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-curriculum__box {
+  background-color: #fff;
+  padding: 50px;
+  margin-top: 100px;
+  @media (max-width: $bp-md) {
+    padding: 30px 20px;
+    margin-top: 50px;
+  }
+}
+
+.p-curriculum__list {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+  @media (min-width: $bp-md) {
+    grid-template-columns: 1fr 1fr;
+  }
+  &--2 {
+    @media (min-width: $bp-md) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+.p-curriculum-card {
+  background: rgba($color-base, 0.1);
+  text-align: center;
+  padding: 30px;
+  @media (max-width: $bp-md) {
+    padding: 30px 20px;
+  }
+}
+
+.p-curriculum-card__title {
+  font-size: 19px;
+  @media (max-width: $bp-md) {
+    font-size: 17px;
+  }
+}
+
+.p-curriculum-card__meta {
+  background: #fff;
+  color: $color-pink;
+  font-size: 15px;
+  padding: 2px 20px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 10px auto 0;
+  @media (max-width: $bp-md) {
+    font-size: 12px;
+  }
+}
+
+.p-curriculum-card__desc {
+  margin-top: 25px;
+  font-size: 14px;
+  @media (max-width: $bp-md) {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+}
+
+.p-curriculum__title {
+  color: $color-base;
+  font-size: 22px;
+}
+.p-curriculum__lead {
+  font-size: 16px;
+  line-height: 2.5;
+  @media (max-width: $bp-md) {
+    line-height: 2;
+    font-size: 14px;
+  }
+}
+
+.p-curriculum__point {
+  color: $color-key;
+  border: 1px solid $color-key;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 20px;
+  @media (max-width: $bp-md) {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+.p-curriculum__pointbox {
+  border: 1px solid $color-key;
+  padding: 20px 30px;
+  margin-top: 30px;
+  @media (max-width: $bp-md) {
+    padding: 20px;
+  }
+  .c-note {
+    text-align: right;
+    margin-top: 1em;
+  }
+}
+
+.p-curriculum__pointbox__title {
+  color: $color-key;
+  font-size: 17px;
+}
+.p-curriculum__pointbox__desc {
+  font-size: 16px;
+  line-height: 2.5;
+  margin-top: 10px;
+  @media (max-width: $bp-md) {
+    line-height: 1.8;
+    font-size: 14px;
+  }
+}
+
+.p-curriculum__flowlist {
+  display: grid;
+  gap: 50px;
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.p-curriculum__flow-card {
+  background: rgba($color-base, 0.1);
+  text-align: center;
+  padding: 50px 30px;
+  position: relative;
+  @media (max-width: $bp-md) {
+    padding: 30px;
+  }
+  &:nth-child(-n + 3)::after {
+    content: "▶︎";
+    position: absolute;
+    right: -50px;
+    width: 50px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: $color-key;
+    @media (max-width: $bp-md) {
+      content: "▼";
+      right: 0;
+      left: 0;
+      top: auto;
+      margin: auto;
+      bottom: -50px;
+      height: 50px;
+      transform: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &:last-child {
+    background-color: $color-key;
+    .p-curriculum__flow-desc {
+      color: #fff;
+    }
+  }
+}
+
+.p-curriculum__flow-desc {
+  font-size: 19px;
+}
+
+.p-curriculum__flow-title {
+  background: #fff;
+  color: $color-pink;
+  font-size: 15px;
+  padding: 2px 20px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto 10px;
+}
+.p-curriculum__flow__title {
+  font-size: 20px;
+  margin: 50px 0 15px;
+  @media (max-width: $bp-md) {
+    text-align: center;
+  }
+}

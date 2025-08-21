@@ -8,26 +8,44 @@
 /* l-footer
    ========================================================================== */
 .l-footer {
-  padding: 80px 0 40px;
+  @media (min-width: $bp-md) {
+    padding: 80px 0 40px;
+  }
+  @media (max-width: $bp-md) {
+    padding: 60px 0 100px;
+  }
 }
 
 .l-footer__inner {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
 }
 
 .l-footer__contact {
-  margin-bottom: 60px;
+  @media (min-width: $bp-md) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: $bp-md) {
+    margin-bottom: 40px;
+  }
 }
 
 .l-footer__nav {
-  margin-bottom: 80px;
+  @media (min-width: $bp-md) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: $bp-md) {
+    margin-bottom: 60px;
+  }
 }
 
 .l-footer__brand {
   margin-bottom: 100px;
+  @media (max-width: $bp-md) {
+    margin-bottom: 40px;
+  }
 }
 
 .l-footer__copyright {
@@ -45,6 +63,9 @@
   color: #5a9a8b;
   margin: 0;
   letter-spacing: 0.1em;
+  @media (max-width: $bp-md) {
+    font-size: 20px;
+  }
 }
 
 /* c-footer-nav
@@ -58,6 +79,10 @@
   padding: 0;
   gap: 40px;
   flex-wrap: wrap;
+  @media (max-width: $bp-md) {
+    gap: 20px;
+    flex-direction: column;
+  }
 }
 
 .c-footer-nav__item {
@@ -100,10 +125,16 @@
    ========================================================================== */
 .c-footer-tagline {
   margin: 0 0 8px 0;
+  @media (max-width: $bp-md) {
+    font-size: 14px;
+  }
 }
 
 .c-footer-tagline--jp {
   font-size: 14px;
+  @media (max-width: $bp-md) {
+    font-size: 12px;
+  }
 }
 
 /* c-copyright
@@ -115,59 +146,3 @@
 /* ==========================================================================
    Responsive
    ========================================================================== */
-
-@media (max-width: $bp-md) {
-  .l-footer {
-    padding: 60px 0 30px;
-  }
-
-  .l-footer__contact {
-    margin-bottom: 40px;
-  }
-
-  .l-footer__nav {
-    margin-bottom: 60px;
-  }
-
-  .l-footer__brand {
-    margin-bottom: 40px;
-  }
-
-  .c-footer-title {
-    font-size: 20px;
-  }
-
-  .c-footer-nav {
-    gap: 20px;
-  }
-
-  .c-footer-nav__link {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-
-  .c-footer-logo {
-    font-size: 36px;
-  }
-
-  .c-footer-tagline {
-    font-size: 14px;
-  }
-
-  .c-footer-tagline--jp {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .c-footer-nav {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .c-footer-nav__link {
-    display: block;
-    width: 200px;
-    text-align: center;
-  }
-}
