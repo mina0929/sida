@@ -10,17 +10,18 @@
         <nav class="l-footer__nav">
             <ul class="c-footer-nav">
                 <li class="c-footer-nav__item">
-                    <a href="#company" class="c-footer-nav__link">COMPANY</a>
+                    <a href="<?php echo esc_url(home_url('/company')); ?>" class="c-footer-nav__link">COMPANY</a>
                 </li>
                 <li class="c-footer-nav__item">
-                    <a href="#salon" class="c-footer-nav__link">SALON</a>
+                    <a href="<?php echo esc_url(home_url('/salon')); ?>" class="c-footer-nav__link">SALON</a>
                 </li>
                 <li class="c-footer-nav__item">
-                    <a href="#recruit" class="c-footer-nav__link">RECRUIT</a>
+                    <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="c-footer-nav__link">RECRUIT</a>
                 </li>
                 <li class="c-footer-nav__item">
-                    <a href="#recruit" class="c-footer-nav__link">CONTACT</a>
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="c-footer-nav__link">CONTACT</a>
                 </li>
+
             </ul>
         </nav>
 

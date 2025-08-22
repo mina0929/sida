@@ -1,0 +1,87 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-salon__grid {
+  display: grid;
+  gap: 50px;
+  @media (min-width: $bp-md) {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+}
+
+.p-salon__content {
+  padding: 20px 20px 40px;
+  text-align: center;
+  color: $color-base;
+  @media (max-width: $bp-md) {
+    padding: 20px 20px 30px;
+  }
+}
+
+.p-salon__img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.p-salon__image {
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.p-salon__name {
+  font-size: 35px;
+  margin-bottom: 10px;
+  @media (max-width: $bp-md) {
+    font-size: 25px;
+  }
+}
+
+.p-salon__tel,
+.p-salon__address {
+  font-size: 15px;
+  @media (max-width: $bp-md) {
+    font-size: 13px;
+  }
+}
+
+.p-salon__tel {
+  margin-top: 10px;
+}
+
+.p-salon__address-ttl,
+.p-salon__tel-ttl {
+  font-size: 12px;
+  @media (max-width: $bp-md) {
+    font-size: 11px;
+  }
+}
+
+.p-salon__item {
+  background-color: #fff;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 18px;
+    height: 18px;
+    z-index: 2;
+    transition: all 0.3s ease;
+    background: url("/wp-content/themes/sida/assets/images/common/arrow.svg") no-repeat center/contain;
+
+    @media (max-width: $bp-md) {
+      width: 13px;
+      height: 13px;
+    }
+  }
+  &:hover {
+    &:after {
+      right: 30px;
+    }
+    .p-salon__img {
+      transform: scale(1.05);
+    }
+  }
+}

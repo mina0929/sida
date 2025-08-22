@@ -38,3 +38,5 @@ function sida_enqueue_assets()
     }
 }
 add_action('wp_enqueue_scripts', 'sida_enqueue_assets');
+
+add_theme_support('post-thumbnails');
