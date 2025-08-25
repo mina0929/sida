@@ -23,16 +23,16 @@
             <nav class="l-header__nav">
                 <ul class="c-nav">
                     <li class="c-nav__item">
-                        <a href="#company" class="c-nav__link">COMPANY</a>
+                        <a href="<?php echo esc_url(home_url('/company')); ?>" class="c-nav__link">COMPANY</a>
                     </li>
                     <li class="c-nav__item">
-                        <a href="#salon" class="c-nav__link">SALON</a>
+                        <a href="<?php echo esc_url(home_url('/salon')); ?>" class="c-nav__link">SALON</a>
                     </li>
                     <li class="c-nav__item">
-                        <a href="#contact" class="c-nav__link">CONTACT</a>
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="c-nav__link">CONTACT</a>
                     </li>
                     <li class="c-nav__item">
-                        <a href="#recruit" class="c-nav__link">RECRUIT</a>
+                        <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="c-nav__link">RECRUIT</a>
                     </li>
                 </ul>
             </nav>
@@ -60,16 +60,16 @@
 
             <ul class="c-global-nav">
                 <li class="c-global-nav__item">
-                    <a href="#company" class="c-global-nav__link">COMPANY</a>
+                    <a href="<?php echo esc_url(home_url('/company')); ?>" class="c-nav__link">COMPANY</a>
                 </li>
                 <li class="c-global-nav__item">
-                    <a href="#salon" class="c-global-nav__link">SALON</a>
+                    <a href="<?php echo esc_url(home_url('/salon')); ?>" class="c-nav__link">SALON</a>
                 </li>
                 <li class="c-global-nav__item">
-                    <a href="#contact" class="c-global-nav__link">CONTACT</a>
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="c-nav__link">CONTACT</a>
                 </li>
                 <li class="c-global-nav__item">
-                    <a href="#recruit" class="c-global-nav__link">RECRUIT</a>
+                    <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="c-nav__link">RECRUIT</a>
                 </li>
             </ul>
         </nav>

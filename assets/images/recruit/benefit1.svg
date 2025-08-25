@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="163" height="156" viewBox="0 0 163 156">
+  <g id="グループ_731" data-name="グループ 731" transform="translate(-176 -2671)">
+    <g id="長方形_822" data-name="長方形 822" transform="translate(176 2671)" fill="#304e47" stroke="#707070" stroke-width="1" opacity="0.05">
+      <rect width="163" height="156" stroke="none"/>
+      <rect x="0.5" y="0.5" width="162" height="155" fill="none"/>
+    </g>
+    <g id="グループ_601" data-name="グループ 601" transform="translate(260.9 2750.9) rotate(180)">
+      <path id="パス_342" data-name="パス 342" d="M10.372,0c5.982,0,11.759,5.882,11.759,11.91s-9.685,22.516-9.685,22.516S.773,19.19.066,12.714,4.389,0,10.372,0Z" transform="matrix(0.809, -0.588, 0.588, 0.809, 0, 13.008)" fill="#7dc3ad" fill-rule="evenodd"/>
+      <path id="パス_343" data-name="パス 343" d="M19.672,27.049S8.466,20.1,4.391,7.312A16.892,16.892,0,0,0,0,0" transform="translate(6.775 1.988)" fill="none" stroke="#589c87" stroke-linecap="round" stroke-width="2" fill-rule="evenodd"/>
+      <path id="パス_344" data-name="パス 344" d="M11.065,0,3.609.35,0,7.377" transform="translate(9.234 11.823)" fill="none" stroke="#589c87" stroke-linecap="round" stroke-width="2" fill-rule="evenodd"/>
+      <path id="パス_345" data-name="パス 345" d="M7.377,0,1.794.987,0,4.918" transform="translate(15.381 19.2)" fill="none" stroke="#589c87" stroke-linecap="round" stroke-width="2" fill-rule="evenodd"/>
+    </g>
+    <g id="グループ_602" data-name="グループ 602" transform="translate(292.239 2752.601) rotate(90)">
+      <path id="パス_346" data-name="パス 346" d="M0,3.074A3.076,3.076,0,0,0,3.082,6.147h12.9V0H3.082A3.07,3.07,0,0,0,0,3.074Z" transform="translate(2.017 48.817) rotate(-31)" fill="#fcc24c" fill-rule="evenodd"/>
+      <path id="パス_347" data-name="パス 347" d="M7.067,0,7.036,13.859S-2.55,31.6.656,34.245s7.786-7.066,7.786-7.066l2.382,3.87.226,12.728L7.789,50.1a2.539,2.539,0,0,0,1.02,3.368l1.141.624a2.413,2.413,0,0,0,3.3-1.009l4.532-8.613,1.852-14.328S23.12,24.65,18.527.546" transform="translate(0 8.606)" fill="#ffdd95" fill-rule="evenodd"/>
+      <rect id="長方形_823" data-name="長方形 823" width="20.901" height="9.836" transform="translate(2.459 0)" fill="#589c87"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="156" viewBox="0 0 164 156">
+  <g id="グループ_736" data-name="グループ 736" transform="translate(-557 -2671)">
+    <g id="グループ_733" data-name="グループ 733">
+      <g id="長方形_822" data-name="長方形 822" transform="translate(557 2671)" fill="#304e47" stroke="#707070" stroke-width="1" opacity="0.05">
+        <rect width="164" height="156" stroke="none"/>
+        <rect x="0.5" y="0.5" width="163" height="155" fill="none"/>
+      </g>
+      <path id="パス_349" data-name="パス 349" d="M396.786,188.689c-9.754-.944-14.208,10.329-14.208,10.329l3.59,2.91c-.03-10.72,9.359-11.665,9.359-11.665C399.3,189.318,396.786,188.689,396.786,188.689Z" transform="translate(283.25 2546.987)" fill="#ffdd95"/>
+      <g id="グループ_603" data-name="グループ 603" transform="translate(604 2713)">
+        <path id="パス_350" data-name="パス 350" d="M102.182,234.927h0a32.827,32.827,0,0,0,65.655,0H102.182Z" transform="translate(-102.182 -202.1)" fill="#589c87"/>
+        <path id="パス_351" data-name="パス 351" d="M102.182,118.88h32.99V86.053A32.966,32.966,0,0,0,102.182,118.88Z" transform="translate(-102.182 -86.053)" fill="#589c87"/>
+      </g>
+      <g id="グループ_604" data-name="グループ 604" transform="translate(604 2713)">
+        <path id="パス_352" data-name="パス 352" d="M105.96,165.83a32.462,32.462,0,0,0-3.778,15.236h32.99Z" transform="translate(-102.182 -148.239)" fill="#7dc3ad"/>
+        <path id="パス_353" data-name="パス 353" d="M170.328,91.367l17.964,27.513V86.053A32.908,32.908,0,0,0,170.328,91.367Z" transform="translate(-155.302 -86.053)" fill="#7dc3ad"/>
+      </g>
+    </g>
+    <circle id="楕円形_17" data-name="楕円形 17" cx="6.88" cy="6.88" r="6.88" transform="translate(642.435 2770.696)" fill="#467c6c"/>
+    <circle id="楕円形_18" data-name="楕円形 18" cx="2.646" cy="2.646" r="2.646" transform="translate(646.669 2774.93)" fill="#ffdd95"/>
+    <circle id="楕円形_19" data-name="楕円形 19" cx="6.88" cy="6.88" r="6.88" transform="translate(617.256 2770.696)" fill="#467c6c"/>
+    <circle id="楕円形_20" data-name="楕円形 20" cx="2.646" cy="2.646" r="2.646" transform="translate(621.49 2774.93)" fill="#ffdd95"/>
+  </g>
+</svg>

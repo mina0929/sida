@@ -11,3 +11,126 @@ body {
 .p-page {
   padding: 0 0 100px;
 }
+
+.entry-content {
+  * {
+    + * {
+      margin-top: 1em;
+    }
+  }
+}
+
+form {
+  margin-top: 100px !important;
+  > p {
+    margin-top: 50px !important;
+  }
+  br {
+    display: none;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 680px;
+    margin: auto;
+    span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+
+      &.req {
+        &::after {
+          content: "必須";
+          color: #fff;
+          background: $color-pink;
+          margin-left: 2px;
+          border-radius: 5px;
+          padding: 2px 8px;
+          font-size: 10px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .wpcf7-form-control-wrap {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .wpcf7-not-valid-tip {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+  input,
+  textarea,
+  select {
+    background: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+  }
+  input:focus,
+  textarea:focus,
+  select:focus {
+    background: rgba($color-pink, 0.1);
+  }
+  .acceptance {
+    .wpcf7-form-control-wrap {
+      justify-content: unset;
+      align-items: unset;
+    }
+    .wpcf7-list-item {
+      margin: 0 auto;
+    }
+    label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      input {
+        width: fit-content;
+      }
+      .wpcf7-list-item-label {
+        margin-top: 0;
+        gap: 0;
+      }
+    }
+  }
+  input[type="submit"] {
+    background: $color-key;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 100px;
+    padding: 20px 50px;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    font-weight: 500;
+    &:hover {
+      background: $color-pink;
+    }
+  }
+  .wpcf7-spinner {
+    display: block;
+    margin: 0 auto;
+  }
+  .wpcf7-response-output {
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+
+    @media (max-width: $bp-md) {
+      border-radius: 100px;
+      padding: 15px;
+    }
+  }
+}

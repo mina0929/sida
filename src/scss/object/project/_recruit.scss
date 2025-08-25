@@ -1,0 +1,292 @@
+@use "../../foundation/variables" as *;
+@use "../../foundation/mixin" as *;
+
+.p-recruit__grid {
+  display: grid;
+  gap: 50px;
+  @media (min-width: $bp-md) {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+}
+.p-recruit_subttl {
+  font-size: 43px;
+  margin-bottom: 50px;
+  @media (max-width: $bp-md) {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+.p-recruit_desc {
+  font-size: 20px;
+  line-height: 2.5;
+  @media (max-width: $bp-md) {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+.p-recruit__box {
+  + .p-recruit__box {
+    margin-top: 150px;
+    @media (max-width: $bp-md) {
+      margin-top: 60px;
+    }
+  }
+}
+
+.p-recruit__btnbox {
+  display: grid;
+  gap: 40px;
+  margin-top: 60px;
+  @media (min-width: $bp-md) {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-top: 100px;
+  }
+}
+
+.p-recruit__btnitem {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(to top, #0c2722 0%, rgba(12, 39, 34, 0) 100%), url("@/assets/images/p-recruit__bg.jpg") center/cover no-repeat;
+    opacity: 0.33;
+  }
+}
+
+.p-recruit__btntext {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  * {
+    color: #fff;
+    font-weight: 400;
+  }
+  &--en {
+    font-size: 19px;
+    @media (max-width: $bp-md) {
+      font-size: 14px;
+    }
+  }
+  &--ja {
+    font-size: 28px;
+    @media (max-width: $bp-md) {
+      font-size: 20px;
+    }
+  }
+}
+.p-recruit__btn {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+}
+
+.p-recruit__btnitem {
+  &:hover {
+    .c-btn--primary {
+      background-color: $color-pink;
+      transform: scale(1.05);
+    }
+  }
+}
+.p-recruit__btnimg {
+  aspect-ratio: 526/351;
+  object-fit: cover;
+  position: relative;
+}
+
+.p-recruit__images {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 45%;
+  gap: 100px;
+  height: fit-content;
+  @media (max-width: $bp-md) {
+    margin-top: 50px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-recruit__image--1 {
+  @media (min-width: $bp-md) {
+    padding-top: 150px;
+  }
+  @media (max-width: $bp-md) {
+    width: 60%;
+  }
+}
+.p-recruit__image--2 {
+  @media (min-width: $bp-md) {
+    padding-bottom: 150px;
+  }
+  @media (max-width: $bp-md) {
+    width: 70%;
+    margin: 0 0 0 auto;
+  }
+}
+.p-recruit__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-recruit__benefitsbox {
+  background: #fff;
+  padding: 100px;
+  @media (max-width: $bp-md) {
+    padding: 30px 20px;
+  }
+}
+.p-recruit__benefits {
+  display: grid;
+  gap: 20px 20px;
+  grid-template-columns: repeat(2, 1fr);
+  @media (min-width: $bp-md) {
+    gap: 40px 20px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.p-recruit__benefits-title {
+  text-align: center;
+  margin-bottom: 50px;
+  @media (max-width: $bp-md) {
+    margin-bottom: 20px;
+  }
+}
+.p-recruit__benefits-title--en {
+  font-size: 44px;
+  display: block;
+}
+.p-recruit__benefits-title--ja {
+  font-size: 16px;
+  opacity: 0.5;
+  display: block;
+}
+
+.p-recruit__benefit {
+  text-align: center;
+  p {
+    margin-top: 1em;
+    @media (max-width: $bp-md) {
+      font-size: 14px;
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.p-recruit__storys-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.p-recruit__storys-title--en {
+  font-size: 44px;
+  display: block;
+}
+.p-recruit__storys-title--ja {
+  font-size: 16px;
+  opacity: 0.5;
+  display: block;
+}
+
+.p-recruit__story {
+  position: relative;
+  background: url("/wp-content/themes/sida/assets/images/recruit/story1.jpg") no-repeat center/cover;
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  align-items: flex-end;
+  @media (min-width: $bp-md) {
+    border-radius: 20px;
+    padding: 70px;
+    grid-template-columns: 1fr 1fr;
+    aspect-ratio: 1120/448;
+  }
+  @media (max-width: $bp-md) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding: 45px 20px 30px;
+    min-height: 250px;
+    grid-template-columns: 1fr max-content;
+    background-position: 66% 50%;
+  }
+  &--2 {
+    background: url("/wp-content/themes/sida/assets/images/recruit/story2.jpg") no-repeat center/cover;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to right, #0c2722 0%, rgba(12, 39, 34, 0) 100%) no-repeat;
+    opacity: 0.33;
+  }
+}
+
+.p-recruit__story {
+  color: #fff;
+  + .p-recruit__story {
+    margin-top: 70px;
+    @media (max-width: $bp-md) {
+      margin-top: 0;
+    }
+  }
+}
+
+.p-recruit__story-title {
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 42px;
+  margin: 20px 0;
+  @media (max-width: $bp-md) {
+    font-size: 20px;
+  }
+}
+.p-recruit__story-meta {
+  font-size: 14px;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+}
+.p-recruit__story-name {
+  font-size: 40px;
+  @media (max-width: $bp-md) {
+    font-size: 16px;
+  }
+}
+.p-recruit__story-role {
+  @media (max-width: $bp-md) {
+    font-size: 10px;
+  }
+}
+.p-recruit__story-text {
+  position: relative;
+  z-index: 2;
+}
+.p-recruit__story-cta {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 2;
+}
+.p-recruit__story:hover {
+  .c-btn--primary {
+    background-color: $color-pink;
+    transform: scale(1.05);
+  }
+}
