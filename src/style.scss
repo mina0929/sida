@@ -1,26 +1,27 @@
-// Foundation
+// ===== Foundation (all @use must come first) =====
 @use "scss/foundation/reset";
-@use "scss/foundation/variables";
-@use "scss/foundation/mixin";
+@use "scss/foundation/variables" as *;
+@use "scss/foundation/mixin" as *;
 @use "scss/foundation/base";
 
-// Layout
+// ===== Layout =====
 @use "scss/layout/header";
 @use "scss/layout/footer";
 
-// Object - Component
+// ===== Object - Component =====
 @use "scss/object/component/button";
-
-// Object - Project
 @use "scss/object/component/header-ui";
+
+// ===== Object - Project =====
 @use "scss/object/project/article";
 @use "scss/object/project/index";
 @use "scss/object/project/company";
 @use "scss/object/project/curriculum";
 @use "scss/object/project/salon";
 @use "scss/object/project/recruit";
+@use "scss/object/project/story";
 
-// Object - Utility
+// ===== Object - Utility =====
 @use "scss/object/utility/utilities";
 @use "scss/object/utility/align";
 @use "scss/object/utility/margin";

@@ -20,27 +20,28 @@
                     the_post(); ?>
 
                     <?php
-                    // 上部：基本情報（ACF）
-                    $addr = get_field('addr');   // 住所
-                    $tel = get_field('tel');    // TEL
-                    $hour = get_field('hour');   // 営業時間
-                    $url = get_field('url');    // 予約URLなど
-                    $map = get_field('map');    // リッチエディタ（iframe想定）
+                    $addr = get_field('addr');
+                    $tel = get_field('tel');
+                    $hour = get_field('hour');
+                    $url = get_field('url');
+                    $map = get_field('googlemap');
+                    $mapurl = get_field('mapurl');
                     ?>
 
-                    <div class="p-salon__head">
-                        <h1 class="p-salon__title"><?php the_title(); ?></h1>
-                        <?php
-                        // アイキャッチ（任意）
-                        if (has_post_thumbnail()):
-                            echo '<div class="p-salon__thumb">';
-                            the_post_thumbnail('large', ['class' => 'p-salon__img', 'loading' => 'lazy']);
-                            echo '</div>';
-                        endif;
-                        ?>
-                        </header>
+                    <div class="p-salon__infobox">
+
 
                         <div class="p-salon__info">
+                            <div class="p-salon__titlebox">
+                                <h3 class="p-salon__title"><?php the_title(); ?></h3>
+                                <?php if ($mapurl): ?>
+                                    <div class="p-salon__link">
+                                        <a href="<?php echo esc_html($mapurl); ?>" class="c-link">Google Map<img
+                                                src="<?php echo get_template_directory_uri(); ?>/assets/images/common/arrow.svg"
+                                                class="c-link__arrow"></a>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
                             <dl class="p-salon__info-list">
                                 <?php if ($addr): ?>
                                     <div class="p-salon__info-row">
@@ -53,7 +54,8 @@
                                     <div class="p-salon__info-row">
                                         <dt class="p-salon__info-term">TEL</dt>
                                         <dd class="p-salon__info-desc">
-                                            <a href="tel:<?php echo esc_attr(preg_replace('/\D+/', '', $tel)); ?>">
+                                            <a class="c-textlink"
+                                                href="tel:<?php echo esc_attr(preg_replace('/\D+/', '', $tel)); ?>">
                                                 <?php echo esc_html($tel); ?>
                                             </a>
                                         </dd>
@@ -63,7 +65,8 @@
                                 <?php if ($hour): ?>
                                     <div class="p-salon__info-row">
                                         <dt class="p-salon__info-term">HOUR</dt>
-                                        <dd class="p-salon__info-desc"><?php echo esc_html($hour); ?></dd>
+                                        <dd class="p-salon__info-desc"><?php echo wp_kses_post($hour); ?>
+                                        </dd>
                                     </div>
                                 <?php endif; ?>
 
@@ -71,7 +74,8 @@
                                     <div class="p-salon__info-row">
                                         <dt class="p-salon__info-term">URL</dt>
                                         <dd class="p-salon__info-desc">
-                                            <a class="c-link" href="<?php echo esc_url($url); ?>" target="_blank" rel="noopener">
+                                            <a class="c-textlink" target="_blank" href="<?php echo esc_url($url); ?>"
+                                                target="_blank" rel="noopener">
                                                 予約はこちら
                                             </a>
                                         </dd>
@@ -79,36 +83,76 @@
                                 <?php endif; ?>
                             </dl>
                         </div>
+                        <div>
+                            <?php
+                            // アイキャッチ（任意）
+                            if (has_post_thumbnail()):
+                                echo '<div class="p-salon__thumb">';
+                                the_post_thumbnail('large', ['class' => 'p-salon__img', 'loading' => 'lazy']);
+                                echo '</div>';
+                            endif;
+                            ?>
+                        </div>
+                    </div><?php if ($map): ?>
+                        <div class="p-salon__map">
+                            <?php echo wp_kses($map, [
+                                'iframe' => [
+                                    'src' => true,
+                                    'width' => true,
+                                    'height' => true,
+                                    'frameborder' => true,
+                                    'style' => true,
+                                    'allow' => true,
+                                    'allowfullscreen' => true,
+                                ],
+                            ]); ?>
+                        </div>
+                    <?php endif; ?>
 
-                        <?php if ($map): ?>
-                            <div class="p-salon__map">
-                                <?php
-                                // iframe入りのWYSIWYGをそのまま出す（信頼できる入力のみ）
-                                echo $map; // wp_kses_post() に通すと iframe が消えるため注意
-                                ?>
-                            </div>
-                        <?php endif; ?>
+                    <?php
+                    // 親グループを一度だけ取得
+                    $staff_group = get_field('staff', get_the_ID()); // 配列 or null
+            
+                    $has_staff = false;
+                    $staff_html = '';
 
-                        <?php
-                        // ===== STAFF（グループ: staff_item1〜10） =====
-                        $has_staff = false;
+                    if ($staff_group && is_array($staff_group)) {
+                        // グループ内のキー名（ACF側の「名前」に合わせる）
+                        $keys = [
+                            'staff_item',
+                            'staff_item2',
+                            'staff_item3',
+                            'staff_item4',
+                            'staff_item5',
+                            'staff_item6',
+                            'staff_item7',
+                            'staff_item8',
+                            'staff_item9',
+                            'staff_item10',
+                        ];
+
                         ob_start();
-                        for ($i = 1; $i <= 10; $i++):
-                            $item = get_field("staff_item{$i}"); // グループ配列 or null
-                            if (empty($item))
+
+                        foreach ($keys as $key) {
+                            if (empty($staff_group[$key]) || !is_array($staff_group[$key]))
                                 continue;
 
-                            $img = isset($item['staff_img']) ? $item['staff_img'] : '';
-                            $name = isset($item['staff_name']) ? $item['staff_name'] : '';
-                            $role = isset($item['staff_role']) ? $item['staff_role'] : '';
-                            $num = isset($item['staff_num']) ? $item['staff_num'] : ''; // 年数など
-                            $insta = isset($item['staff_insta']) ? $item['staff_insta'] : '';
+                            $item = $staff_group[$key];
 
-                            // いずれか入っていれば表示
-                            if ($img || $name || $role || $num || $insta):
-                                $has_staff = true;
-                                ?>
-                                <article class="p-staff-card">
+                            // サブフィールド（画像はURL/配列 どちらでもOKに）
+                            $img = $item['staff_img'] ?? '';
+                            if (is_array($img) && isset($img['url']))
+                                $img = $img['url'];
+
+                            $name = $item['staff_name'] ?? '';
+                            $role = $item['staff_role'] ?? '';
+                            $num = $item['staff_num'] ?? '';
+                            $insta = $item['staff_insta'] ?? '';
+
+                            // いずれか入っていれば描画
+                            if ($img || $name || $role || $num || $insta) {
+                                $has_staff = true; ?>
+                                <div class="p-staff-card">
                                     <?php if ($img): ?>
                                         <figure class="p-staff-card__figure">
                                             <img src="<?php echo esc_url($img); ?>" alt="<?php echo esc_attr($name ?: 'staff'); ?>"
@@ -123,41 +167,59 @@
 
                                         <?php if ($role || $num): ?>
                                             <p class="p-staff-card__meta">
-                                                <?php echo esc_html(trim($num . ($num && $role ? '｜' : '') . $role)); ?>
+                                                <?php echo esc_html(trim($num . ($num && $role ? '　/　' : '') . $role)); ?>
                                             </p>
                                         <?php endif; ?>
+                                        <?php if (!empty($insta)):
+                                            // 入力がURLならパス末尾をユーザー名に、IDだけならそのまま使う
+                                            $is_url = filter_var($insta, FILTER_VALIDATE_URL);
+                                            $username = $is_url ? trim((string) parse_url($insta, PHP_URL_PATH), '/') : ltrim($insta, '@');
 
-                                        <?php if ($insta): ?>
+                                            // リンク先は必ず完全URLに正規化
+                                            $href = $is_url
+                                                ? $insta
+                                                : ('https://www.instagram.com/' . rawurlencode($username) . '/');
+                                            ?>
                                             <p class="p-staff-card__insta">
-                                                <a href="<?php echo esc_url($insta); ?>" target="_blank" rel="noopener">@Instagram</a>
+                                                <a href="<?php echo esc_url($href); ?>" target="_blank" rel="noopener" class="c-textlink">
+                                                    @<?php echo esc_html($username); ?>
+                                                </a>
                                             </p>
                                         <?php endif; ?>
+
                                     </div>
-                                </article>
-                                <?php
-                            endif;
-                        endfor;
-                        $staff_html = ob_get_clean();
-                        ?>
-
-                        <?php if ($has_staff): ?>
-                            <section class="p-salon__staff">
-                                <h2 class="p-salon__staff-title">STAFF</h2>
-                                <div class="p-salon__staff-grid">
-                                    <?php echo $staff_html; ?>
                                 </div>
-                            </section>
-                        <?php endif; ?>
+                            <?php }
+                        }
 
-                        <div class="p-salon__back">
-                            <a class="c-btn c-btn--ghost" href="<?php echo esc_url(get_post_type_archive_link('salon')); ?>">
-                                Back to list
-                            </a>
+                        $staff_html = ob_get_clean();
+                    }
+                    ?>
+
+                    <?php if ($has_staff): ?>
+                        <section class="p-salon__staff">
+                            <h4 class="p-salon__staff-title">
+                                <span class="p-salon__staff-title--en">STAFF</span>
+                                <span class="p-salon__staff-title--ja">スタッフ</span>
+                            </h4>
+                            <div class="p-salon__staff-grid">
+                                <?php echo $staff_html; ?>
+                            </div>
+                        </section>
+                    <?php endif; ?>
+
+
+                    <div class="p-salon__back">
+                        <div class="p-salon__link">
+                            <a href="<?php echo esc_url(home_url('/salon')); ?>" class="c-link">Back to list<img
+                                    src="<?php echo get_template_directory_uri(); ?>/assets/images/common/arrow.svg"
+                                    class="c-link__arrow"></a>
                         </div>
+                    </div>
 
-                    <?php endwhile; endif; ?>
+                <?php endwhile; endif; ?>
 
-            </div>
+        </div>
     </section>
 
 </div>

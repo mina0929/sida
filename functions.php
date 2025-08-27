@@ -8,13 +8,6 @@ function sida_enqueue_assets()
         null
     );
 
-    wp_enqueue_style(
-        'swiper-css',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
-        [],
-        null
-    );
-
     $dir = get_template_directory();
     $uri = get_template_directory_uri();
 
@@ -23,14 +16,6 @@ function sida_enqueue_assets()
         wp_enqueue_style('sida-style', $uri . '/dist/style.css', [], filemtime($css));
     }
 
-    // Swiper JS（CDN）
-    wp_enqueue_script(
-        'swiper-js',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
-        [],
-        null,
-        true
-    );
 
     $js = $dir . '/dist/main.js';
     if (file_exists($js)) {

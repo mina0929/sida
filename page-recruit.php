@@ -43,9 +43,9 @@
 
         <div class="swiper c-marquee-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">新メニュー開始！</div>
-                <div class="swiper-slide">採用情報公開中</div>
-                <div class="swiper-slide">キャンペーン実施中</div>
+                <div class="swiper-slide">BE YOURSELF SHINE AS A STYLIST</div>
+                <div class="swiper-slide">BE YOURSELF SHINE AS A STYLIST</div>
+                <div class="swiper-slide">BE YOURSELF SHINE AS A STYLIST</div>
             </div>
         </div>
 
@@ -123,7 +123,8 @@
                     <span class="p-recruit__storys-title--ja">スタッフストーリー</span>
                 </h4>
                 <div class="p-recruit__storys">
-                    <a href class="p-recruit__story p-recruit__story--1">
+                    <a href="<?php echo esc_url(home_url('/recruit/story01')); ?>"
+                        class="p-recruit__story p-recruit__story--1">
                         <div class="p-recruit__story-text">
                             <h5 class="p-recruit__story-title">
                                 安心があるから、<br>
@@ -138,7 +139,8 @@
                             <div class="c-btn c-btn--primary">MORE</div>
                         </div>
                     </a>
-                    <a href class="p-recruit__story p-recruit__story--2">
+                    <a href="<?php echo esc_url(home_url('/recruit/story02')); ?>"
+                        class="p-recruit__story p-recruit__story--2">
                         <div class="p-recruit__story-text">
                             <h5 class="p-recruit__story-title">
                                 マンツーマンだから<br class="md-only">こそ、
@@ -155,6 +157,117 @@
                         </div>
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-recruit__box p-recruit__flow">
+        <div class="l-container">
+            <div class="p-recruit__storysbox">
+                <h4 class="p-recruit__flow-title">
+                    <span class="p-recruit__flow-title--en">FLOW</span>
+                    <span class="p-recruit__flow-title--ja">採用までの流れ</span>
+                </h4>
+                <div class="p-curriculum__flow">
+                    <ul class="p-curriculum__flowlist">
+                        <li class="p-curriculum__flow-card">
+                            <div class="p-curriculum__flow-title">STEP1</div>
+                            <p class="p-curriculum__flow-desc">応募</p>
+                            <p class="p-curriculum__flow-text">ホームページのお問い合わせ<br>
+                                フォームから応募ください。<br>
+                                担当者よりご連絡いたします。</p>
+                        </li>
+                        <li class="p-curriculum__flow-card">
+                            <div class="p-curriculum__flow-title">STEP2</div>
+                            <p class="p-curriculum__flow-desc">書類選考</p>
+                            <p class="p-curriculum__flow-text">応募後、メールもしくは郵送にて<br>
+                                履歴書をお送りください。<br>
+                                到着後、書類選考を行います。</p>
+                        </li>
+                        <li class="p-curriculum__flow-card">
+                            <div class="p-curriculum__flow-title">STEP3</div>
+                            <p class="p-curriculum__flow-desc">面接・店舗見学</p>
+                            <p class="p-curriculum__flow-text">書類選考通過後、<br>
+                                通過のお知らせと、面接・店舗見学<br>
+                                のご案内をお送りします。</p>
+                        </li>
+                        <li class="p-curriculum__flow-card">
+                            <div class="p-curriculum__flow-title">STEP4</div>
+                            <p class="p-curriculum__flow-desc">採用</p>
+                            <p class="p-curriculum__flow-text">面接・店舗見学後、<br>
+                                選考結果を10日以内に<br>
+                                お送りします。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-recruit__box">
+        <div class="l-container">
+            <div class="p-recruit__jobofferbox">
+                <h4 class="p-recruit__joboffer-title">
+                    <span class="p-recruit__joboffer-title--en">JOB OFFER</span>
+                    <span class="p-recruit__joboffer-title--ja">募集要項</span>
+                </h4>
+                <dl class="p-recruit__joboffer-list">
+                    <div class="p-recruit__joboffer-row">
+                        <dt class="p-recruit__joboffer-term">募集職種</dt>
+                        <dd class="p-recruit__joboffer-desc">アシスタント／アシスタント兼アイリスト</dd>
+                    </div>
+                    <div class="p-recruit__joboffer-row">
+                        <dt class="p-recruit__joboffer-term">雇用形態</dt>
+                        <dd class="p-recruit__joboffer-desc"><span
+                                class="u-text-pink">▶︎プライベートを優先にしたい！</span><br>基本給：20万円<br>
+                            休日：公休8回／早番　遅番制<br>
+                            給与：歩合・技術売上40%　フリー＆指名<br><br><span class="u-text-pink">▶︎しっかり稼ぎたい！</span><br>基本給：20万円<br>
+                            休日：公休8回　フルタイム／早番　遅番　月4回<br>
+                            給与：歩合／100万円以下　40%　　<br class="md-only">100万円以上　45%<br><br><span
+                                class="u-text-pink">▶︎将来への伸び代をつけたい</span><br>基本給：25万円<br>
+                            休日：公休8回　フルタイム／早番　遅番　月4回<br>
+                            給与：歩合／フリー　40%　　<br class="md-only">指名　　50%</dd>
+                    </div>
+                    <div class="p-recruit__joboffer-row">
+                        <dt class="p-recruit__joboffer-term">勤務地</dt>
+                        <dd class="p-recruit__joboffer-desc">sida<br>〒567-0817 大阪府茨木市別院町3-34<br><br>sida
+                            SAIIN<br>〒567-0817 大阪府茨木市別院町3-34<br><br>sida MINOH<br>〒567-0817 大阪府茨木市別院町3-34<br><br>ranan
+                            by sida<br>〒567-0817 大阪府茨木市別院町3-34
+                        </dd>
+                    </div>
+                    <div class="p-recruit__joboffer-row">
+                        <dt class="p-recruit__joboffer-term">勤務時間</dt>
+                        <dd class="p-recruit__joboffer-desc">09:00open　<br class="md-only">フル：09:00〜20:00　<br
+                                class="md-only">早番：09:00〜18:00　<br class="md-only">遅番：11:00〜ラスト<br><br class="md-only">
+                            10:00open　<br class="md-only">フル：10:00〜21:00　<br class="md-only">早番：10:00〜17:00　<br
+                                class="md-only">遅番：12:00〜ラスト
+                        </dd>
+                    </div>
+                    <div class="p-recruit__joboffer-row">
+                        <dt class="p-recruit__joboffer-term">歩合給</dt>
+                        <dd class="p-recruit__joboffer-desc">最低保証以上の売上から</dd>
+                    </div>
+                    <div class="p-recruit__joboffer-row">
+                        <dt class="p-recruit__joboffer-term">社会保険</dt>
+                        <dd class="p-recruit__joboffer-desc">雇用保険／健康保険／労災／厚生年金</dd>
+                    </div>
+                    <div class="p-recruit__joboffer-row">
+                        <dt class="p-recruit__joboffer-term">福利厚生</dt>
+                        <dd class="p-recruit__joboffer-desc">産休・育休</dd>
+                    </div>
+                    <div class="p-recruit__joboffer-row">
+                        <dt class="p-recruit__joboffer-term">諸手当</dt>
+                        <dd class="p-recruit__joboffer-desc">店販手当、役職手当</dd>
+                    </div>
+                    <div class="p-recruit__joboffer-row">
+                        <dt class="p-recruit__joboffer-term">交通費</dt>
+                        <dd class="p-recruit__joboffer-desc">公共交通機関利用の場合　上限1万円</dd>
+                    </div>
+                </dl>
+                <div class="p-recruit__joboffer-btn">
+                    <div class="p-recruit__joboffer-link">
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="c-btn2">ENTRY</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
