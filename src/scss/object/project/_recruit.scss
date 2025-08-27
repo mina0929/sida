@@ -198,7 +198,7 @@
 
 .p-recruit__story {
   position: relative;
-  background: url("/wp-content/themes/sida/assets/images/recruit/story1.jpg") no-repeat center/cover;
+  //background: url("/wp-content/themes/sida/assets/images/recruit/story1.jpg") no-repeat center/cover;
   display: grid;
   align-items: center;
   overflow: hidden;
@@ -218,7 +218,7 @@
     background-position: 66% 50%;
   }
   &--2 {
-    background: url("/wp-content/themes/sida/assets/images/recruit/story2.jpg") no-repeat center/cover;
+    //background: url("/wp-content/themes/sida/assets/images/recruit/story2.jpg") no-repeat center/cover;
   }
   &::before {
     content: "";
@@ -287,7 +287,7 @@
 }
 .p-recruit__flow {
   padding: 150px 0;
-  background: url("/wp-content/themes/sida/assets/images/index/salons_bg.jpg") no-repeat center/cover;
+  //background: url("/wp-content/themes/sida/assets/images/index/salons_bg.jpg") no-repeat center/cover;
   @media (max-width: $bp-md) {
     padding: 60px 0;
   }

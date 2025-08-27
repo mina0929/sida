@@ -60,7 +60,7 @@
   height: 18px;
   z-index: 2;
   transition: all 0.3s ease;
-  background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
+  //background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
 
   @media (max-width: $bp-md) {
     width: 12px;
@@ -137,7 +137,7 @@
     margin-left: 5px;
     z-index: 2;
     transition: all 0.3s ease;
-    background: url("/wp-content/themes/sida/assets/images/common/blank.svg") no-repeat center/contain;
+    //background: url("/wp-content/themes/sida/assets/images/common/blank.svg") no-repeat center/contain;
   }
 }
 .c-floating {
@@ -186,7 +186,7 @@
     width: 15px;
     height: 15px;
     transition: all 0.3s ease;
-    background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
+    //background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
   }
 
   &:hover {
