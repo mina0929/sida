@@ -22,6 +22,12 @@
             <h3 class="c-page_subttl">教育は「型」より「想い」。
                 <br>丁寧に育てる制度があります。
             </h3>
+            <div class="p-curriculum__imgbox"><img
+                    src="<?php echo get_template_directory_uri(); ?>/assets/images/curriculum/curriculum1.jpg"
+                    alt="カリキュラム" class="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/curriculum/curriculum2.jpg"
+                    alt="カリキュラム" class="">
+            </div>
             <div class="p-curriculum__box">
                 <section class="p-curriculum__item p-curriculum__item--policy">
                     <h4 class="p-curriculum__title c-ttlobject">sidaの教育方針と仕組み</h4>
@@ -32,46 +38,63 @@
 
                     <div class="p-curriculum__list">
                         <div class="p-curriculum-card">
-                            <div class="p-curriculum-card__head">
-                                <h5 class="p-curriculum-card__title">カウンセリングセミナー</h5>
-                                <div class="p-curriculum-card__meta">月一回</div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/curriculum/curriculumitem1.jpg"
+                                alt="カリキュラム" class="">
+                            <div class="p-curriculum-card__body">
+                                <div class="p-curriculum-card__head">
+                                    <h5 class="p-curriculum-card__title">カウンセリングセミナー</h5>
+                                    <div class="p-curriculum-card__meta">月一回</div>
+                                </div>
+                                <p class="p-curriculum-card__desc">
+                                    お客様の「なりたい印象」を引き出すためのヒアリング力を<br class="md-hidden">
+                                    磨くセミナーです。似合わせや印象プロデュースの理論を学び、<br class="md-hidden">
+                                    日々の接客で活かせる実践的なカウンセリングスキルを身につけます。
+                                </p>
                             </div>
-                            <p class="p-curriculum-card__desc">
-                                お客様の「なりたい印象」を引き出すためのヒアリング力を<br class="md-hidden">
-                                磨くセミナーです。似合わせや印象プロデュースの理論を学び、<br class="md-hidden">
-                                日々の接客で活かせる実践的なカウンセリングスキルを身につけます。
-                            </p>
                         </div>
                         <div class="p-curriculum-card">
-                            <div class="p-curriculum-card__head">
-                                <h5 class="p-curriculum-card__title">技術講習</h5>
-                                <div class="p-curriculum-card__meta">月一回</div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/curriculum/curriculumitem2.jpg"
+                                alt="カリキュラム" class="">
+                            <div class="p-curriculum-card__body">
+                                <div class="p-curriculum-card__head">
+                                    <h5 class="p-curriculum-card__title">技術講習</h5>
+                                    <div class="p-curriculum-card__meta">月一回</div>
+                                </div>
+                                <p class="p-curriculum-card__desc">
+                                    最新のトレンドや技術を取り入れながら、<br class="md-hidden">
+                                    カット・カラー・ケアのスキルを高める講習です。<br class="md-hidden">
+                                    現場ですぐに役立つ実践練習で、着実に成長できます。
+                                </p>
                             </div>
-                            <p class="p-curriculum-card__desc">
-                                最新のトレンドや技術を取り入れながら、<br class="md-hidden">
-                                カット・カラー・ケアのスキルを高める講習です。<br class="md-hidden">
-                                現場ですぐに役立つ実践練習で、着実に成長できます。
-                            </p>
                         </div>
                         <div class="p-curriculum-card">
-                            <div class="p-curriculum-card__head">
-                                <h5 class="p-curriculum-card__title">オンライン・対面の<br class="md-only">両方を活用した<br>
-                                    ハイブリッド型教育</h5>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/curriculum/curriculumitem3.jpg"
+                                alt="カリキュラム" class="">
+                            <div class="p-curriculum-card__body">
+                                <div class="p-curriculum-card__head">
+                                    <h5 class="p-curriculum-card__title">オンライン・対面の<br class="md-only">両方を活用した<br>
+                                        ハイブリッド型教育</h5>
+                                </div>
+                                <p class="p-curriculum-card__desc">自宅から参加できるオンライン研修と、<br class="md-hidden">
+                                    対面練習を組み合わせた効率的な学習スタイル。<br class="md-hidden">
+                                    時間や場所にとらわれず、継続的にスキルアップできます。
+                                </p>
                             </div>
-                            <p class="p-curriculum-card__desc">自宅から参加できるオンライン研修と、<br class="md-hidden">
-                                対面練習を組み合わせた効率的な学習スタイル。<br class="md-hidden">
-                                時間や場所にとらわれず、継続的にスキルアップできます。
-                            </p>
                         </div>
                         <div class="p-curriculum-card">
-                            <div class="p-curriculum-card__head">
-                                <h5 class="p-curriculum-card__title">ミルボン<br class="md-only">「オージュアソムリエ制度」など<br>
-                                    外部講習にも対応</h5>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/curriculum/curriculumitem4.jpg"
+                                alt="カリキュラム" class="">
+                            <div class="p-curriculum-card__body">
+                                <div class="p-curriculum-card__head">
+                                    <h5 class="p-curriculum-card__title">ミルボン<br class="md-only">「オージュアソムリエ制度」など<br>
+                                        外部講習にも対応</h5>
+                                </div>
+                                <p class="p-curriculum-card__desc">髪質や頭皮の専門知識を深める「オージュアソムリエ」取得をはじめ、<br
+                                        class="md-hidden">
+                                    外部の専門講習への参加も支援。高い提案力と専門性を持った<br class="md-hidden">
+                                    スタイリストとして活躍できる環境です。
+                                </p>
                             </div>
-                            <p class="p-curriculum-card__desc">髪質や頭皮の専門知識を深める「オージュアソムリエ」取得をはじめ、<br class="md-hidden">
-                                外部の専門講習への参加も支援。高い提案力と専門性を持った<br class="md-hidden">
-                                スタイリストとして活躍できる環境です。
-                            </p>
                         </div>
                     </div>
                 </section>
@@ -87,21 +110,27 @@
 
                     <div class="p-curriculum__list p-curriculum__list--2">
                         <div class="p-curriculum-card">
-                            <div class="p-curriculum-card__head">
-                                <h5 class="p-curriculum-card__title">短時間勤務正社員</h5>
-                                <div class="p-curriculum-card__meta">時間制限がある方向け</div>
+                            <div class="p-curriculum-card__body">
+                                <div class="p-curriculum-card__head">
+                                    <h5 class="p-curriculum-card__title">短時間勤務正社員</h5>
+                                    <div class="p-curriculum-card__meta">時間制限がある方向け</div>
+                                </div>
                             </div>
                         </div>
                         <div class="p-curriculum-card">
-                            <div class="p-curriculum-card__head">
-                                <h5 class="p-curriculum-card__title">通常勤務正社員</h5>
-                                <div class="p-curriculum-card__meta">キャリアップ可能</div>
+                            <div class="p-curriculum-card__body">
+                                <div class="p-curriculum-card__head">
+                                    <h5 class="p-curriculum-card__title">通常勤務正社員</h5>
+                                    <div class="p-curriculum-card__meta">キャリアップ可能</div>
+                                </div>
                             </div>
                         </div>
                         <div class="p-curriculum-card">
-                            <div class="p-curriculum-card__head">
-                                <h5 class="p-curriculum-card__title">店長・マネージャー職</h5>
-                                <div class="p-curriculum-card__meta">教育・経営・店頭を兼任</div>
+                            <div class="p-curriculum-card__body">
+                                <div class="p-curriculum-card__head">
+                                    <h5 class="p-curriculum-card__title">店長・マネージャー職</h5>
+                                    <div class="p-curriculum-card__meta">教育・経営・店頭を兼任</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -114,6 +143,12 @@
                     <p class="p-curriculum__lead">
                         より専門的に髪と向き合うために、ミルボン社の「オージュアソムリエ制度」を取り入れています。この制度は、髪質・頭皮・ライフスタイルに合わせて最適なケアプログラムを提案できる、美容の“パーソナルケアのプロ”としての証です。専門の研修や試験を経て認定を受けるため、技術だけでなく知識・カウンセリング力も高めることができます。実際にsidaでは、多くのスタッフが資格を取得しており、信頼される提案力につながっています。「お客様の髪に本当に合うケアを届けたい」――そんな想いを、資格というかたちで育てていける制度です。
                     </p>
+                    <div class="p-curriculum__imgbox"><img
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/curriculum/curriculum3.jpg"
+                            alt="オージュアソムリエ制度" class="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/curriculum/curriculum4.jpg"
+                            alt="オージュアソムリエ制度" class="">
+                    </div>
                     <div class="p-curriculum__pointbox">
                         <h5 class="p-curriculum__pointbox__title">オージュアソムリエ制度とは？</h5>
                         <p class="p-curriculum__pointbox__desc">
@@ -131,16 +166,16 @@
                                 <p class="p-curriculum__flow-desc">知識検定</p>
                             </li>
                             <li class="p-curriculum__flow-card">
-                                <div class="p-curriculum__flow-title">STEP1</div>
-                                <p class="p-curriculum__flow-desc">知識検定</p>
+                                <div class="p-curriculum__flow-title">STEP2</div>
+                                <p class="p-curriculum__flow-desc">技術検定</p>
                             </li>
                             <li class="p-curriculum__flow-card">
-                                <div class="p-curriculum__flow-title">STEP1</div>
-                                <p class="p-curriculum__flow-desc">知識検定</p>
+                                <div class="p-curriculum__flow-title">STEP3</div>
+                                <p class="p-curriculum__flow-desc">カウンセリング検定</p>
                             </li>
                             <li class="p-curriculum__flow-card">
-                                <div class="p-curriculum__flow-title">STEP1</div>
-                                <p class="p-curriculum__flow-desc">知識検定</p>
+                                <div class="p-curriculum__flow-title">STEP4</div>
+                                <p class="p-curriculum__flow-desc">認定</p>
                             </li>
                         </ul>
 

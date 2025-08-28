@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <section>
+    <section id="mvv">
         <div class="l-container">
             <h3 class="c-page_subttl">マンツーマン施術で、<br class="md-only">髪に“わたしらしさ”を。</h3>
             <p class="c-page_desc">sidaでは、カウンセリングから仕上げまでを一人のスタイリストが担当する“マンツーマン施術”を大切にしています。<br>
@@ -86,7 +86,7 @@
             </div>
         </div>
     </section>
-    <section class="p-company_greeting">
+    <section id="greeting" class="p-company_greeting">
         <div class="l-container">
             <div class="p-company_greeting__box">
                 <div class="p-company_greeting__image">

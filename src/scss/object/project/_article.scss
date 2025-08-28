@@ -2,7 +2,7 @@
 @use "../../foundation/mixin" as *;
 
 body {
-  //background-image: url("/wp-content/themes/sida/assets/images/common/body_bg.jpg");
+  background-image: url("/wp-content/themes/sida/assets/images/common/body_bg.jpg");
   background-repeat: repeat-y; // 縦方向にリピート
   background-size: 100% auto; // 横幅100%、縦は自動
   background-position: center top;
