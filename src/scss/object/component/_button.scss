@@ -25,6 +25,23 @@
     height: 70px;
     font-size: 12px;
   }
+  &2 {
+    background: $color-key;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 100px;
+    padding: 20px 50px;
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    &:hover {
+      background: $color-pink;
+    }
+  }
 }
 
 .c-btn--primary {
@@ -43,7 +60,7 @@
   height: 18px;
   z-index: 2;
   transition: all 0.3s ease;
-  background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
+  //background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
 
   @media (max-width: $bp-md) {
     width: 12px;
@@ -101,6 +118,28 @@
     right: 10px;
   }
 }
+.c-textlink {
+  color: $color-key;
+  position: relative;
+  transition: color 0.3s ease;
+  color: $color-base;
+  display: block;
+  width: fit-content;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+  &[target="_blank"]::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    z-index: 2;
+    transition: all 0.3s ease;
+    //background: url("/wp-content/themes/sida/assets/images/common/blank.svg") no-repeat center/contain;
+  }
+}
 .c-floating {
   position: fixed;
   right: 0;
@@ -147,7 +186,7 @@
     width: 15px;
     height: 15px;
     transition: all 0.3s ease;
-    background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
+    //background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
   }
 
   &:hover {

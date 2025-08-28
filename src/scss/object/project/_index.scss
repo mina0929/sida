@@ -12,7 +12,6 @@
     min-height: unset;
   }
 }
-
 .p-hero__inner {
   max-width: 1280px;
   margin: 0 auto;
@@ -43,7 +42,6 @@
     width: 100%;
   }
 }
-
 .p-hero__title {
   font-size: 5vw;
   font-weight: 300;
@@ -54,15 +52,12 @@
     line-height: 1;
   }
 }
-
 .p-hero__title-line {
   display: block;
 }
-
 .p-hero__title-line--accent {
   color: $color-pink;
 }
-
 .p-hero__subtitle {
   font-size: 1.5vw;
   line-height: 1.8;
@@ -71,7 +66,6 @@
     font-size: 4.5vw;
   }
 }
-
 .p-hero__image {
   position: relative;
   @media (max-width: $bp-md) {
@@ -84,7 +78,6 @@
     }
   }
 }
-
 .p-hero__img {
   width: 100%;
   height: auto;
@@ -94,19 +87,17 @@
    Project - Concept
    ========================================================================== */
 
-.p-concept {
+.p-hero-concept {
   padding: 200px 0 0;
 }
 
-.p-concept__inner {
+.p-hero-concept__inner {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.p-concept__content {
-}
-.p-concept__text {
+.p-hero-concept__text {
   display: grid;
   gap: 30px;
   @media (min-width: $bp-md) {
@@ -114,14 +105,12 @@
     gap: 100px;
   }
 }
-.p-concept__title {
-}
-.p-concept__title-en {
+.p-hero-concept__title-en {
   font-size: 19px;
   opacity: 0.5;
   display: block;
 }
-.p-concept__title-ja {
+.p-hero-concept__title-ja {
   font-size: 35px;
   margin: 20px 0 40px;
   line-height: 1.4;
@@ -131,8 +120,7 @@
     font-size: 28px;
   }
 }
-
-.p-concept__description {
+.p-hero-concept__description {
   font-size: 16px;
   line-height: 2.5;
   @media (max-width: $bp-md) {
@@ -140,12 +128,10 @@
     line-height: 2;
   }
 }
-
-.p-concept__description p {
+.p-hero-concept__description p {
   margin-bottom: 20px;
 }
-
-.p-concept__images {
+.p-hero-concept__images {
   margin-top: 100px;
   display: grid;
   grid-template-columns: 35% 1fr;
@@ -157,7 +143,7 @@
   }
 }
 
-.p-concept__image--1 {
+.p-hero-concept__image--1 {
   @media (min-width: $bp-md) {
     padding-bottom: 150px;
   }
@@ -165,7 +151,7 @@
     width: 60%;
   }
 }
-.p-concept__image--2 {
+.p-hero-concept__image--2 {
   @media (min-width: $bp-md) {
     padding-top: 150px;
   }
@@ -174,7 +160,7 @@
     margin: 0 0 0 auto;
   }
 }
-.p-concept__img {
+.p-hero-concept__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -184,14 +170,14 @@
    Project - Company
    ========================================================================== */
 
-.p-company {
+.p-hero-company {
   padding: 200px 0;
   @media (max-width: $bp-md) {
     padding: 100px 0;
   }
 }
 
-.p-company__content {
+.p-hero-company__content {
   display: grid;
   gap: 100px;
   height: fit-content;
@@ -204,22 +190,22 @@
     margin-bottom: 50px;
   }
 }
-.p-company__left {
+.p-hero-company__left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.p-company__title-en {
+.p-hero-company__title-en {
   font-size: 44px;
   display: block;
 }
-.p-company__title-ja {
+.p-hero-company__title-ja {
   font-size: 16px;
   opacity: 0.5;
   display: block;
 }
 
-.p-company__description {
+.p-hero-company__description {
   font-size: 16px;
   line-height: 2.5;
   @media (max-width: $bp-md) {
@@ -228,12 +214,12 @@
   }
 }
 
-.p-company__images {
+.p-hero-company__images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
-.p-company__img {
+.p-hero-company__img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -243,7 +229,7 @@
   transition: all 0.3s ease;
 }
 
-.p-company__image {
+.p-hero-company__image {
   text-align: center;
   aspect-ratio: 3/4;
   position: relative;
@@ -274,19 +260,19 @@
     height: 18px;
     z-index: 2;
     transition: all 0.3s ease;
-    background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
+    //background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
   }
   &:hover {
     &:after {
       right: 30px;
     }
-    .p-company__img {
+    .p-hero-company__img {
       transform: scale(1.05);
     }
   }
 }
 
-.p-company__image-caption {
+.p-hero-company__image-caption {
   position: absolute;
   left: 20px;
   bottom: 20px;
@@ -298,13 +284,13 @@
     color: #fff;
   }
 }
-.p-company__caption--en {
+.p-hero-company__caption--en {
   font-size: 16px;
 }
-.p-company__caption--ja {
+.p-hero-company__caption--ja {
   font-size: 19px;
 }
-.p-company__image-num {
+.p-hero-company__image-num {
   position: absolute;
   left: 0;
   top: 0;
@@ -330,15 +316,15 @@
    Project - Salons
    ========================================================================== */
 
-.p-salons {
+.p-hero-salons {
   padding: 150px 0;
-  background: url("/wp-content/themes/sida/assets/images/index/salons_bg.jpg") no-repeat center/cover;
+  //background: url("/wp-content/themes/sida/assets/images/index/salons_bg.jpg") no-repeat center/cover;
   @media (max-width: $bp-md) {
     padding: 60px 0;
   }
 }
 
-.p-salons__header {
+.p-hero-salons__header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -353,13 +339,13 @@
   }
 }
 
-.p-salons__title-en {
+.p-hero-salons__title-en {
   font-size: 44px;
   @media (max-width: $bp-md) {
     display: block;
   }
 }
-.p-salons__title-ja {
+.p-hero-salons__title-ja {
   font-size: 16px;
   opacity: 0.5;
   @media (min-width: $bp-md) {
@@ -370,14 +356,14 @@
   }
 }
 
-.p-salons__grid {
+.p-hero-salons__grid {
   @media (max-width: $bp-md) {
     margin-bottom: 30px;
     width: calc(100% + 40px);
     margin-left: -20px;
   }
 }
-.p-salons__grid .swiper-wrapper {
+.p-hero-salons__grid .swiper-wrapper {
   @media (min-width: $bp-md) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -387,31 +373,31 @@
 }
 
 @media (min-width: $bp-md) {
-  .p-salons__grid .swiper-slide {
+  .p-hero-salons__grid .swiper-slide {
     width: auto !important;
     margin: 0 !important;
   }
 }
 
-.p-salons__image {
+.p-hero-salons__image {
   overflow: hidden;
   aspect-ratio: 3/4;
 }
-.p-salons__img {
+.p-hero-salons__img {
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
   transition: all 0.3s ease;
 }
 
-.p-salons__content {
+.p-hero-salons__content {
   padding: 20px;
   text-align: center;
   * {
     color: $color-base;
   }
 }
-.p-salons__item {
+.p-hero-salons__item {
   background-color: rgba(255, 255, 255, 0.38);
   overflow: hidden;
   position: relative;
@@ -424,29 +410,29 @@
     height: 13px;
     z-index: 2;
     transition: all 0.3s ease;
-    background: url("/wp-content/themes/sida/assets/images/common/arrow.svg") no-repeat center/contain;
+    //background: url("/wp-content/themes/sida/assets/images/common/arrow.svg") no-repeat center/contain;
   }
   &:hover {
     &:after {
       right: 25px;
     }
-    .p-salons__img {
+    .p-hero-salons__img {
       transform: scale(1.05);
     }
   }
 }
 
-.p-salons__name {
+.p-hero-salons__name {
   font-size: 23px;
   margin: 0 0 5px;
 }
 
-.p-salons__address {
+.p-hero-salons__address {
   font-size: 14px;
   opacity: 0.6;
   margin: 0;
 }
-.p-salons__link {
+.p-hero-salons__link {
   @media (max-width: $bp-md) {
     * {
       margin: auto;
@@ -458,20 +444,20 @@
    Project - Recruit
    ========================================================================== */
 
-.p-recruit {
+.p-hero-recruit {
   @media (min-width: $bp-md) {
     padding: 200px 0 100px;
   }
 }
-.p-recruit__inner {
+.p-hero-recruit__inner {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.p-recruit__content {
+.p-hero-recruit__content {
   position: relative;
-  background: url("/wp-content/themes/sida/assets/images/index/p-recruit__bg.jpg") no-repeat center/cover;
+  //background: url("/wp-content/themes/sida/assets/images/index/recruit_bg.jpg") no-repeat center/cover;
   display: grid;
   align-items: center;
   overflow: hidden;
@@ -492,15 +478,15 @@
     width: 70%;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(to right, #0c2722 0%, rgba(12, 39, 34, 0) 100%), url("@/assets/images/p-recruit__bg.jpg") center/cover no-repeat;
+    background: linear-gradient(to right, #0c2722 0%, rgba(12, 39, 34, 0) 100%);
     opacity: 0.33;
   }
 }
 
-.p-recruit__content * {
+.p-hero-recruit__content * {
   color: #fff;
 }
-.p-recruit__title-en {
+.p-hero-recruit__title-en {
   line-height: 1em;
   @media (min-width: $bp-md) {
     font-size: 80px;
@@ -510,7 +496,7 @@
   }
 }
 
-.p-recruit__subtitle {
+.p-hero-recruit__subtitle {
   font-weight: 500;
   line-height: 1.4;
   @media (min-width: $bp-md) {
@@ -523,15 +509,15 @@
   }
 }
 
-.p-recruit__description {
+.p-hero-recruit__description {
   font-size: 14px;
   line-height: 1.8;
 }
-.p-recruit__text {
+.p-hero-recruit__text {
   position: relative;
   z-index: 2;
 }
-.p-recruit__cta {
+.p-hero-recruit__cta {
   display: flex;
   height: 100%;
   width: 100%;
@@ -540,7 +526,7 @@
   z-index: 2;
 }
 
-.p-recruit__content:hover {
+.p-hero-recruit__content:hover {
   .c-btn--primary {
     background-color: $color-pink;
     transform: scale(1.05);
@@ -611,37 +597,37 @@
 
 /* Concept Responsive */
 @media (max-width: $bp-lg) {
-  .p-concept__content {
+  .p-hero-concept__content {
     grid-template-columns: 1fr;
     gap: 60px;
   }
 
-  .p-concept__images {
+  .p-hero-concept__images {
     order: -1;
   }
 }
 
 @media (max-width: $bp-md) {
-  .p-concept {
-    padding: 60px 0;
+  .p-hero-concept {
+    padding: 60px 0 0;
   }
 
-  .p-concept__subtitle {
+  .p-hero-concept__subtitle {
     font-size: 24px;
   }
 
-  .p-concept__images {
+  .p-hero-concept__images {
     grid-template-columns: 1fr;
   }
 
-  .p-concept__image--1 {
+  .p-hero-concept__image--1 {
     grid-row: auto;
   }
 }
 
 /* Company Responsive */
 @media (max-width: $bp-lg) {
-  .p-company__images {
+  .p-hero-company__images {
     grid-template-columns: 1fr;
     gap: 40px;
   }
