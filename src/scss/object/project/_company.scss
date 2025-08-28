@@ -81,8 +81,12 @@
 
 .p-company_mvv__image {
   margin: 100px 0 0;
-  .swiper-wrapper {
-    transition-timing-function: linear;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @media (max-width: $bp-md) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
   }
 }
 

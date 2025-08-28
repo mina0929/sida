@@ -217,12 +217,12 @@
                     <div class="p-recruit__joboffer-row">
                         <dt class="p-recruit__joboffer-term">雇用形態</dt>
                         <dd class="p-recruit__joboffer-desc"><span
-                                class="u-text-pink">▶︎プライベートを優先にしたい！</span><br>基本給：20万円<br>
+                                class="u-text-pink">▶︎プライベートを優先にしたい！</span><br>保障給：20万円<br>
                             休日：公休8回／早番　遅番制<br>
-                            給与：歩合・技術売上40%　フリー＆指名<br><br><span class="u-text-pink">▶︎しっかり稼ぎたい！</span><br>基本給：20万円<br>
+                            給与：歩合・技術売上40%　フリー＆指名<br><br><span class="u-text-pink">▶︎しっかり稼ぎたい！</span><br>保障給：20万円<br>
                             休日：公休8回　フルタイム／早番　遅番　月4回<br>
                             給与：歩合／100万円以下　40%　　<br class="md-only">100万円以上　45%<br><br><span
-                                class="u-text-pink">▶︎将来への伸び代をつけたい</span><br>基本給：25万円<br>
+                                class="u-text-pink">▶︎将来への伸び代をつけたい</span><br>保障給：25万円<br>
                             休日：公休8回　フルタイム／早番　遅番　月4回<br>
                             給与：歩合／フリー　40%　　<br class="md-only">指名　　50%</dd>
                     </div>

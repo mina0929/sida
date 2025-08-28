@@ -58,32 +58,12 @@
             </div>
         </div>
         <div class="swiper p-company_mvv__image">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/company1.jpg"
-                        alt="Company image">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/company2.jpg"
-                        alt="Company image">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/company3.jpg"
-                        alt="Company image">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/company1.jpg"
-                        alt="Company image">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/company2.jpg"
-                        alt="Company image">
-                </div>
-                <div class="swiper-slide">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/company3.jpg"
-                        alt="Company image">
-                </div>
-            </div>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/company1.jpg"
+                alt="Company image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/company2.jpg"
+                alt="Company image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/company/company3.jpg"
+                alt="Company image">
         </div>
     </section>
     <section id="greeting" class="p-company_greeting">

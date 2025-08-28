@@ -10,13 +10,13 @@
                 </h1>
                 <p class="p-hero__subtitle">
                     ずっと美しく、わたしらしく。<br>
-                    美しさを叶えるライフサロン。
+                    美しさと健康をケアするサロン。
                 </p>
             </div>
         </div>
         <div class="p-hero__image">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/index/hero.jpg"
-                alt="Beautiful woman with brown hair" class="p-hero__img">
+                alt="Your Beauty.Your Way.Always." class="p-hero__img">
         </div>
     </div>
 </section>

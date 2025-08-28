@@ -244,14 +244,17 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 860px;
   height: 100%;
   padding: 20px;
   transition: transform 0.3s ease;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ==========================================================================
@@ -471,6 +474,7 @@ img {
   height: 18px;
   z-index: 2;
   transition: all 0.3s ease;
+  background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
 }
 @media (max-width: 768px) {
   .c-btn--primary::after {
@@ -552,6 +556,7 @@ img {
   margin-left: 5px;
   z-index: 2;
   transition: all 0.3s ease;
+  background: url("/wp-content/themes/sida/assets/images/common/blank.svg") no-repeat center/contain;
 }
 
 .c-floating {
@@ -604,6 +609,7 @@ img {
   width: 15px;
   height: 15px;
   transition: all 0.3s ease;
+  background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
 }
 .c-floating:hover {
   background-color: #d67996;
@@ -832,17 +838,22 @@ img {
 /* c-global-nav */
 .c-global-nav {
   list-style: none;
-  margin: 80px 0 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 120px;
 }
-
-.c-global-nav__item {
-  margin: 0 0 20px;
+@media (max-width: 768px) {
+  .c-global-nav {
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .c-global-nav__link {
   display: block;
-  color: #333;
+  color: #304d47;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -852,11 +863,25 @@ img {
   transition: color 0.3s ease;
 }
 
-.c-global-nav__link:hover {
-  color: #666;
+.c-nav__titlelink {
+  color: #304d47;
+  font-size: 35px;
+}
+@media (max-width: 768px) {
+  .c-nav__titlelink {
+    font-size: 20px;
+  }
+}
+
+.c-global-innav {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
 }
 
 body {
+  background-image: url("/wp-content/themes/sida/assets/images/common/body_bg.jpg");
   background-repeat: repeat-y;
   background-size: 100% auto;
   background-position: center top;
@@ -1296,6 +1321,7 @@ form .wpcf7-response-output {
   height: 18px;
   z-index: 2;
   transition: all 0.3s ease;
+  background: url("/wp-content/themes/sida/assets/images/common/arrow-white.svg") no-repeat center/contain;
 }
 .p-hero-company__image:hover:after {
   right: 30px;
@@ -1352,6 +1378,7 @@ form .wpcf7-response-output {
    ========================================================================== */
 .p-hero-salons {
   padding: 150px 0;
+  background: url("/wp-content/themes/sida/assets/images/index/salons_bg.jpg") no-repeat center/cover;
 }
 @media (max-width: 768px) {
   .p-hero-salons {
@@ -1364,6 +1391,9 @@ form .wpcf7-response-output {
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 60px;
+}
+.p-hero-salons__header--2 {
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .p-hero-salons__header {
@@ -1399,6 +1429,11 @@ form .wpcf7-response-output {
     display: block;
   }
 }
+.p-hero-salons__title-ja--2 {
+  margin-left: 0;
+  display: block;
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .p-hero-salons__grid {
@@ -1410,8 +1445,8 @@ form .wpcf7-response-output {
 
 @media (min-width: 768px) {
   .p-hero-salons__grid .swiper-wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 30px;
     transform: translate3d(0, 0px, 0px) !important;
   }
@@ -1419,7 +1454,7 @@ form .wpcf7-response-output {
 
 @media (min-width: 768px) {
   .p-hero-salons__grid .swiper-slide {
-    width: auto !important;
+    width: calc(25% - 20px) !important;
     margin: 0 !important;
   }
 }
@@ -1457,6 +1492,7 @@ form .wpcf7-response-output {
   height: 13px;
   z-index: 2;
   transition: all 0.3s ease;
+  background: url("/wp-content/themes/sida/assets/images/common/arrow.svg") no-repeat center/contain;
 }
 .p-hero-salons__item:hover:after {
   right: 25px;
@@ -1499,6 +1535,7 @@ form .wpcf7-response-output {
 
 .p-hero-recruit__content {
   position: relative;
+  background: url("/wp-content/themes/sida/assets/images/index/recruit_bg.jpg") no-repeat center/cover;
   display: grid;
   align-items: center;
   overflow: hidden;
@@ -1787,9 +1824,15 @@ form .wpcf7-response-output {
 
 .p-company_mvv__image {
   margin: 100px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.p-company_mvv__image .swiper-wrapper {
-  transition-timing-function: linear;
+@media (max-width: 768px) {
+  .p-company_mvv__image {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
 }
 
 .p-company_greeting {
@@ -2158,6 +2201,7 @@ form .wpcf7-response-output {
   height: 18px;
   z-index: 2;
   transition: all 0.3s ease;
+  background: url("/wp-content/themes/sida/assets/images/common/arrow.svg") no-repeat center/contain;
 }
 @media (max-width: 768px) {
   .p-salon__item:after {
@@ -2249,11 +2293,11 @@ form .wpcf7-response-output {
   }
 }
 .p-single .p-salon__back .c-link {
-  margin: 60px auto 0;
+  margin: 60px auto;
 }
 @media (min-width: 768px) {
   .p-single .p-salon__back .c-link {
-    margin: 100px auto 0;
+    margin: 100px auto;
   }
 }
 .p-single .p-salon__staff {
@@ -2539,7 +2583,7 @@ form .wpcf7-response-output {
 .p-recruit__flow-title,
 .p-recruit__joboffer-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .p-recruit__benefits-title--en,
@@ -2561,6 +2605,7 @@ form .wpcf7-response-output {
 
 .p-recruit__story {
   position: relative;
+  background: url("/wp-content/themes/sida/assets/images/recruit/story1.jpg") no-repeat center/cover;
   display: grid;
   align-items: center;
   overflow: hidden;
@@ -2583,6 +2628,9 @@ form .wpcf7-response-output {
     grid-template-columns: 1fr max-content;
     background-position: 66% 50%;
   }
+}
+.p-recruit__story--2 {
+  background: url("/wp-content/themes/sida/assets/images/recruit/story2.jpg") no-repeat center/cover;
 }
 .p-recruit__story::before {
   content: "";
@@ -2661,6 +2709,7 @@ form .wpcf7-response-output {
 
 .p-recruit__flow {
   padding: 150px 0;
+  background: url("/wp-content/themes/sida/assets/images/index/salons_bg.jpg") no-repeat center/cover;
 }
 @media (max-width: 768px) {
   .p-recruit__flow {
@@ -2708,9 +2757,26 @@ form .wpcf7-response-output {
   margin-top: 50px;
 }
 
+.c-marquee-swiper {
+  margin-bottom: 100px;
+  opacity: 0.07;
+}
+@media (max-width: 768px) {
+  .c-marquee-swiper {
+    margin-bottom: 60px;
+  }
+}
 .c-marquee-swiper .swiper-slide {
-  width: 100%;
-  height: 200px;
+  font-size: 5vw;
+  width: fit-content;
+  flex-shrink: 0;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+@media (max-width: 768px) {
+  .c-marquee-swiper .swiper-slide {
+    font-size: 14vw;
+  }
 }
 .c-marquee-swiper .swiper-wrapper {
   transition-timing-function: linear;
