@@ -5,7 +5,7 @@ export function initCompanySlider() {
   const el = document.querySelector(".p-company_mvv__image.swiper");
   if (!el) return;
 
-  new Swiper1(el, {
+  new Swiper(el, {
     loop: true,
     slidesPerView: 3, // 複数表示させる場合
     allowTouchMove: false,
