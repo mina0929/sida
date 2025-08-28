@@ -4,7 +4,8 @@
 <footer class="l-footer">
     <div class="l-footer__inner">
         <div class="l-footer__contact">
-            <a href="#contact" class="c-footer-nav__link c-footer-nav__link--contact">CONTACT</a>
+            <a href="<?php echo esc_url(home_url('/contact')); ?>"
+                class="c-footer-nav__link c-footer-nav__link--contact">CONTACT</a>
         </div>
 
         <nav class="l-footer__nav">

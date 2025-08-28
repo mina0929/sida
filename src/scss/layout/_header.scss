@@ -72,12 +72,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 50%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 860px;
   height: 100%;
   padding: 20px;
   transition: transform 0.3s ease;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px); // Safari対応
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

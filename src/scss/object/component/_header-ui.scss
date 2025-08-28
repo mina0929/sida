@@ -81,15 +81,21 @@
 /* c-global-nav */
 .c-global-nav {
   list-style: none;
-  margin: 80px 0 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  gap: 120px;
+  @media (max-width: $bp-md) {
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .c-global-nav__item {
-  margin: 0 0 20px;
 }
 .c-global-nav__link {
   display: block;
-  color: #333;
+  color: $color-base;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
@@ -98,6 +104,17 @@
   border-bottom: 1px solid #e5e5e5;
   transition: color 0.3s ease;
 }
-.c-global-nav__link:hover {
-  color: #666;
+.c-nav__titlelink {
+  color: $color-base;
+  font-size: 35px;
+  @media (max-width: $bp-md) {
+    font-size: 20px;
+  }
+}
+
+.c-global-innav {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
 }

@@ -60,16 +60,68 @@
 
             <ul class="c-global-nav">
                 <li class="c-global-nav__item">
-                    <a href="<?php echo esc_url(home_url('/company')); ?>" class="c-nav__link">COMPANY</a>
+                    <a href="<?php echo esc_url(home_url('/company')); ?>" class="c-nav__titlelink">COMPANY</a>
+                    <ul class="c-global-innav">
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/company#mvv')); ?>" class="c-nav__link">sidaの使命</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/company#greeting')); ?>"
+                                class="c-nav__link">ごあいさつ</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/company')); ?>" class="c-nav__link">会社概要</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="c-global-nav__item">
-                    <a href="<?php echo esc_url(home_url('/salon')); ?>" class="c-nav__link">SALON</a>
+                    <a href="<?php echo esc_url(home_url('/salon')); ?>" class="c-nav__titlelink">SALON</a>
+                    <?php
+                    $news_query = new WP_Query(
+                        array(
+                            'post_type' => 'salon',
+                            'posts_per_page' => 5,
+                        )
+                    );
+                    ?>
+                    <?php if ($news_query->have_posts()): ?>
+                        <ul class="c-global-innav">
+                            <?php while ($news_query->have_posts()): ?>
+                                <?php $news_query->the_post(); ?>
+                                <li>
+                                    <a href="<?php the_permalink(); ?>" class="c-nav__link"><?php the_title(); ?></a>
+                                </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
                 </li>
                 <li class="c-global-nav__item">
-                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="c-nav__link">CONTACT</a>
+                    <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="c-nav__titlelink">RECRUIT</a>
+                    <ul class="c-global-innav">
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="c-nav__link">採用情報</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/recruit/data')); ?>"
+                                class="c-nav__link">数字で見るSida</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/recruit/curriculum')); ?>"
+                                class="c-nav__link">カリキュラム</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/recruit/story01')); ?>"
+                                class="c-nav__link">ストーリー1</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/recruit/story02')); ?>"
+                                class="c-nav__link">ストーリー2</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="c-global-nav__item">
-                    <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="c-nav__link">RECRUIT</a>
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="c-nav__titlelink">CONTACT</a>
                 </li>
             </ul>
         </nav>

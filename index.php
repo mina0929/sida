@@ -144,42 +144,83 @@
         $q = new WP_Query($args);
 
         if ($q->have_posts()): ?>
-            <div class="p-hero-salons__grid swiper">
-                <div class="swiper-wrapper">
-                    <?php while ($q->have_posts()):
-                        $q->the_post();
-                        $addr = get_field('addr_short', get_the_ID());
+            <div class="md-hidden">
+                <div class="p-hero-salons__grid  swiper">
+                    <div class="swiper-wrapper">
+                        <?php while ($q->have_posts()):
+                            $q->the_post();
+                            $addr = get_field('addr_short', get_the_ID());
 
-                        // アイキャッチ（なければダミー）
-                        if (has_post_thumbnail()) {
-                            $img_html = get_the_post_thumbnail(
-                                get_the_ID(),
-                                'large',
-                                [
-                                    'class' => 'p-hero-salons__img',
-                                    'loading' => 'lazy',
-                                    'alt' => esc_attr(get_the_title()),
-                                ]
-                            );
-                        } else {
-                            $fallback = get_template_directory_uri() . '/assets/images/index/company3.jpg';
-                            $img_html = '<img class="p-hero-salons__img" src="' . esc_url($fallback) . '" alt="' . esc_attr(get_the_title()) . '">';
-                        }
-                        ?>
-                        <a href="<?php the_permalink(); ?>" class="p-hero-salons__item swiper-slide">
-                            <div class="p-hero-salons__image">
-                                <?php echo $img_html; ?>
-                            </div>
-                            <div class="p-hero-salons__content">
-                                <h3 class="p-hero-salons__name"><?php the_title(); ?></h3>
-                                <?php if ($addr): ?>
-                                    <p class="p-hero-salons__address"><?php echo esc_html($addr); ?></p>
-                                <?php endif; ?>
-                            </div>
-                        </a>
-                    <?php endwhile; ?>
+                            // アイキャッチ（なければダミー）
+                            if (has_post_thumbnail()) {
+                                $img_html = get_the_post_thumbnail(
+                                    get_the_ID(),
+                                    'large',
+                                    [
+                                        'class' => 'p-hero-salons__img',
+                                        'loading' => 'lazy',
+                                        'alt' => esc_attr(get_the_title()),
+                                    ]
+                                );
+                            } else {
+                                $fallback = get_template_directory_uri() . '/assets/images/index/company3.jpg';
+                                $img_html = '<img class="p-hero-salons__img" src="' . esc_url($fallback) . '" alt="' . esc_attr(get_the_title()) . '">';
+                            }
+                            ?>
+                            <a href="<?php the_permalink(); ?>" class="p-hero-salons__item swiper-slide">
+                                <div class="p-hero-salons__image">
+                                    <?php echo $img_html; ?>
+                                </div>
+                                <div class="p-hero-salons__content">
+                                    <h3 class="p-hero-salons__name"><?php the_title(); ?></h3>
+                                    <?php if ($addr): ?>
+                                        <p class="p-hero-salons__address"><?php echo esc_html($addr); ?></p>
+                                    <?php endif; ?>
+                                </div>
+                            </a>
+                        <?php endwhile; ?>
+                    </div>
                 </div>
             </div>
+            <div class="md-only">
+                <div class="p-hero-salons__grid js-salons swiper">
+                    <div class="swiper-wrapper">
+                        <?php while ($q->have_posts()):
+                            $q->the_post();
+                            $addr = get_field('addr_short', get_the_ID());
+
+                            // アイキャッチ（なければダミー）
+                            if (has_post_thumbnail()) {
+                                $img_html = get_the_post_thumbnail(
+                                    get_the_ID(),
+                                    'large',
+                                    [
+                                        'class' => 'p-hero-salons__img',
+                                        'loading' => 'lazy',
+                                        'alt' => esc_attr(get_the_title()),
+                                    ]
+                                );
+                            } else {
+                                $fallback = get_template_directory_uri() . '/assets/images/index/company3.jpg';
+                                $img_html = '<img class="p-hero-salons__img" src="' . esc_url($fallback) . '" alt="' . esc_attr(get_the_title()) . '">';
+                            }
+                            ?>
+                            <a href="<?php the_permalink(); ?>" class="p-hero-salons__item swiper-slide">
+                                <div class="p-hero-salons__image">
+                                    <?php echo $img_html; ?>
+                                </div>
+                                <div class="p-hero-salons__content">
+                                    <h3 class="p-hero-salons__name"><?php the_title(); ?></h3>
+                                    <?php if ($addr): ?>
+                                        <p class="p-hero-salons__address"><?php echo esc_html($addr); ?></p>
+                                    <?php endif; ?>
+                                </div>
+                            </a>
+                        <?php endwhile; ?>
+                    </div>
+                </div>
+            </div>
+
             <?php wp_reset_postdata(); ?>
         <?php endif; ?>
 
@@ -193,7 +234,7 @@
 
 <section class="p-hero-recruit" id="recruit">
     <div class="p-hero-recruit__inner">
-        <a href class="p-hero-recruit__content">
+        <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="p-hero-recruit__content">
             <div class="p-hero-recruit__text">
                 <h2 class="p-hero-recruit__title">
                     <span class="p-hero-recruit__title-en">RECRUIT</span>

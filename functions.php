@@ -23,15 +23,6 @@ function sida_enqueue_assets()
         wp_enqueue_style('sida-style', $uri . '/dist/style.css', [], filemtime($css));
     }
 
-    // Swiper JS（CDN）
-    wp_enqueue_script(
-        'swiper-js',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
-        [],
-        null,
-        true
-    );
-
     $js = $dir . '/dist/main.js';
     if (file_exists($js)) {
         wp_enqueue_script('sida-script', $uri . '/dist/main.js', [], filemtime($js), true);
