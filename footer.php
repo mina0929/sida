@@ -34,7 +34,7 @@
         </div>
 
         <div class="l-footer__copyright">
-            <p class="c-copyright">© 2023 sida Co., Ltd.</p>
+            <p class="c-copyright">© 2025 sida Co., Ltd.</p>
         </div>
     </div>
 </footer>

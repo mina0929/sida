@@ -49,7 +49,7 @@
                     <h4 class="p-company_mvv-title c-ttlobject c-ttlobject--center">VALUE</h4>
                     <ol class="p-company_mvv-list">
                         <li>尊愛と思いやりをもって、人と向き合う。</li>
-                        <li>安心できる給与・休日・環境を提供する。</li>
+                        <li>安心できる給与・休日・将来性を提供する。</li>
                         <li>成長と挑戦を応援し、誰もが上を目指せるチャンスをつくる。</li>
                         <li>マンツーマンでの誠実な施術を徹底し、お客様一人ひとりに寄り添う。</li>
                         <li>「らしさ」を大切に、働く人も通う人も、sidaで自分らしくいられる場所にする。</li>

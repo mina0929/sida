@@ -52,7 +52,7 @@
         <div class="l-container">
             <h3 class="c-page_subttl c-page_subttl--center">わたしらしい<br class="md-only">働き方を実現する。</h3>
             <p class="c-page_desc c-page_desc--center">sidaでは、20代の若手が<br class="md-only">安心してスタートできるよう、<br
-                    class="md-only">給与・休日・人間関係といった<br>
+                    class="md-only">給与・休日・将来性といった<br>
                 “働きやすさ”をベースに、しっかりと<br class="md-only">キャリアアップできる仕組みを整えています。</p>
 
             <div class="p-recruit__btnbox">
