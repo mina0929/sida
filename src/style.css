@@ -1005,6 +1005,26 @@ form .wpcf7-response-output {
     padding: 15px;
   }
 }
+form .policy {
+  max-width: 680px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 100%;
+  max-height: 200px;
+  overflow: scroll;
+  margin-top: 60px;
+}
+form .policy p {
+  font-size: 12px;
+}
+form .policy li {
+  margin-top: 0.5em;
+  list-style: disc;
+}
+form .policy ul {
+  padding-left: 1em;
+}
 
 .p-hero {
   padding-top: 80px;
@@ -1876,6 +1896,71 @@ form .wpcf7-response-output {
   .p-company_greeting__desc {
     line-height: 2;
   }
+}
+
+.p-company_profile {
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .p-company_profile {
+    margin-top: 60px;
+  }
+}
+
+.p-company_profile-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.p-company_profile-title--en {
+  font-size: 44px;
+  display: block;
+}
+
+.p-company_profile-title--ja {
+  font-size: 16px;
+  opacity: 0.5;
+  display: block;
+}
+
+.p-company_profile-list {
+  max-width: 860px;
+  margin: auto;
+}
+
+.p-company_profile-row {
+  background: #fff;
+  display: grid;
+  gap: 20px;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .p-company_profile-row {
+    grid-template-columns: 20% 1fr;
+  }
+}
+.p-company_profile-row + .p-company_profile-row {
+  margin-top: 15px;
+}
+
+.p-company_profile-term {
+  font-size: 17px;
+}
+@media (max-width: 768px) {
+  .p-company_profile-term {
+    border-bottom: 1px solid rgba(48, 77, 71, 0.5);
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .p-company_profile-desc {
+    font-size: 14px;
+  }
+}
+
+.p-company_profile-btn {
+  margin-top: 50px;
 }
 
 .p-curriculum__box {

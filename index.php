@@ -109,12 +109,12 @@
                     <p class="p-hero-company__caption--ja">ごあいさつ</p>
                 </div>
             </a>
-            <a href="<?php echo esc_url(home_url('/company#overview')); ?>" class="p-hero-company__image"> <img
+            <a href="<?php echo esc_url(home_url('/company#profile')); ?>" class="p-hero-company__image"> <img
                     src="<?php echo get_template_directory_uri(); ?>/assets/images/index/company3.jpg"
                     alt="Salon interior" class="p-hero-company__img">
                 <div class="p-hero-company__image-num">01</div>
                 <div class="p-hero-company__image-caption">
-                    <p class="p-hero-company__caption--en">OVERVIEW</p>
+                    <p class="p-hero-company__caption--en">profile</p>
                     <p class="p-hero-company__caption--ja">会社概要</p>
                 </div>
             </a>

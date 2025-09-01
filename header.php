@@ -70,7 +70,7 @@
                                 class="c-nav__link">ごあいさつ</a>
                         </li>
                         <li>
-                            <a href="<?php echo esc_url(home_url('/company')); ?>" class="c-nav__link">会社概要</a>
+                            <a href="<?php echo esc_url(home_url('/company#profile')); ?>" class="c-nav__link">会社概要</a>
                         </li>
                     </ul>
                 </li>

@@ -41,7 +41,7 @@
                         成長できる社会をつくる。
                     </h5>
                     <p class="p-company_mvv-desc">働きやすさとキャリアの両立を実現しながら、<br>
-                        毎年新しい店舗を増やし、フランチャイズとして拡大。<br>
+                        毎年新しい店舗を増やし、<br class="md-only">フランチャイズとして拡大。<br>
                         「美容師であることに、将来性を感じられる」<br>
                         未来をつくっていきます。</p>
                 </div>
@@ -84,6 +84,48 @@
                         大智
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-company_profile" id="profile">
+        <div class="l-container">
+            <div class="p-company_profilebox">
+                <h4 class="p-company_profile-title">
+                    <span class="p-company_profile-title--en">PROFILE</span>
+                    <span class="p-company_profile-title--ja">会社概要</span>
+                </h4>
+                <dl class="p-company_profile-list">
+                    <div class="p-company_profile-row">
+                        <dt class="p-company_profile-term">会社名</dt>
+                        <dd class="p-company_profile-desc">合同会社sida</dd>
+                    </div>
+                    <div class="p-company_profile-row">
+                        <dt class="p-company_profile-term">設立年月</dt>
+                        <dd class="p-company_profile-desc">2021年10月
+                        </dd>
+                    </div>
+                    <div class="p-company_profile-row">
+                        <dt class="p-company_profile-term">所在地</dt>
+                        <dd class="p-company_profile-desc">〒567-0817 大阪府茨木市別院町3番34号</dd>
+                    </div>
+                    <div class="p-company_profile-row">
+                        <dt class="p-company_profile-term">代表者名</dt>
+                        <dd class="p-company_profile-desc">下山 大智</dd>
+                    </div>
+                    <div class="p-company_profile-row">
+                        <dt class="p-company_profile-term">資本金</dt>
+                        <dd class="p-company_profile-desc">500,000円</dd>
+                    </div>
+                    <div class="p-company_profile-row">
+                        <dt class="p-company_profile-term">従業員数</dt>
+                        <dd class="p-company_profile-desc">18名</dd>
+                    </div>
+                    <div class="p-company_profile-row">
+                        <dt class="p-company_profile-term">事業内容</dt>
+                        <dd class="p-company_profile-desc">美容業</dd>
+                    </div>
+                </dl>
             </div>
         </div>
     </section>

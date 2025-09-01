@@ -36,7 +36,7 @@
                                 <h3 class="p-salon__title"><?php the_title(); ?></h3>
                                 <?php if ($mapurl): ?>
                                     <div class="p-salon__link">
-                                        <a href="<?php echo esc_html($mapurl); ?>" class="c-link">Google Map<img
+                                        <a href="<?php echo esc_html($mapurl); ?>" target="_blank" class="c-link">Google Map<img
                                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/common/arrow.svg"
                                                 class="c-link__arrow"></a>
                                     </div>
@@ -146,6 +146,7 @@
 
                             $name = $item['staff_name'] ?? '';
                             $role = $item['staff_role'] ?? '';
+                            $sommelier = $item['staff_sommelier'] ?? '';
                             $num = $item['staff_num'] ?? '';
                             $insta = $item['staff_insta'] ?? '';
 
@@ -165,9 +166,9 @@
                                             <h3 class="p-staff-card__name"><?php echo esc_html($name); ?></h3>
                                         <?php endif; ?>
 
-                                        <?php if ($role || $num): ?>
+                                        <?php if ($role || $num || $sommelier): ?>
                                             <p class="p-staff-card__meta">
-                                                <?php echo esc_html(trim($num . ($num && $role ? '　/　' : '') . $role)); ?>
+                                                <?php echo esc_html(trim($num . ($num && $role ? '　/　' : '') . $role)); ?><br><?php echo nl2br(esc_html($sommelier)); ?>
                                             </p>
                                         <?php endif; ?>
                                         <?php if (!empty($insta)):
