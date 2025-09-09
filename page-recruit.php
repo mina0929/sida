@@ -229,8 +229,9 @@
                     <div class="p-recruit__joboffer-row">
                         <dt class="p-recruit__joboffer-term">勤務地</dt>
                         <dd class="p-recruit__joboffer-desc">sida<br>〒567-0817 大阪府茨木市別院町3-34<br><br>sida
-                            SAIIN<br>〒567-0817 大阪府茨木市別院町3-34<br><br>sida MINOH<br>〒567-0817 大阪府茨木市別院町3-34<br><br>ranan
-                            by sida<br>〒567-0817 大阪府茨木市別院町3-34
+                            SAIIN<br>〒615-0014 京都府京都市右京区西院巽町2-1-1 オヴェスト西院2 4F<br><br>sida MINOH<br>〒562-0003
+                            大阪府箕面市西小路3丁目16-3<br><br>ranan
+                            by sida<br>〒604-8005 京都府京都市中京区恵比須町534-15 JAPビル2F
                         </dd>
                     </div>
                     <div class="p-recruit__joboffer-row">
